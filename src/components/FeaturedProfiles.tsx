@@ -22,11 +22,16 @@ import type { Escort } from '@/types'
 const mockProfiles: Escort[] = [
   {
     id: '1',
+    slug: 'priya-mumbai',
     name: 'Priya',
     age: 25,
     location: 'Bandra West',
     city: 'Mumbai',
     state: 'Maharashtra',
+    country: 'India',
+    type: 'independent',
+    photo: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400',
+    photos: ['https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400'],
     pricing: {
       oneShot: 15000,
       twoShot: 25000,
@@ -38,31 +43,43 @@ const mockProfiles: Escort[] = [
     reviews: 127,
     verified: true,
     isPremium: true,
+    isActive: true,
     plan: '30',
     services: ['Companionship', 'Dinner Date', 'Travel'],
     description: 'Elegant and sophisticated companion for high-end events and private meetings.',
-    photo: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400',
-    photos: ['https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400'],
-    verification_status: 'approved',
-    phone: '+91 98765 43210',
-    email: 'priya@example.com',
+    images: ['https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400'],
+    videoVerificationStatus: 'approved',
+    identityVerification: {
+      documentType: 'aadhar',
+      status: 'approved'
+    },
+    contactInfo: {
+      phone: '+91 98765 43210',
+      email: 'priya@example.com'
+    },
+    availability: {
+      days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+      hours: '10:00 AM - 2:00 AM'
+    },
     height: '165',
-    weight: '55',
-    measurements: '34-26-36',
-    hair_color: 'Black',
-    eye_color: 'Brown',
-    ethnicity: 'Indian',
+    hairColor: 'Black',
+    eyeColor: 'Brown',
     languages: ['English', 'Hindi', 'Marathi'],
     createdAt: new Date('2024-01-15'),
     updatedAt: new Date('2024-01-15')
   },
   {
     id: '2',
+    slug: 'anjali-bangalore',
     name: 'Anjali',
     age: 28,
     location: 'Koramangala',
     city: 'Bangalore',
     state: 'Karnataka',
+    country: 'India',
+    type: 'independent',
+    photo: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400',
+    photos: ['https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400'],
     pricing: {
       oneShot: 12000,
       twoShot: 20000,
@@ -73,52 +90,76 @@ const mockProfiles: Escort[] = [
     rating: 4.9,
     reviews: 89,
     verified: true,
-    featured: true,
+    isPremium: true,
+    isActive: true,
     plan: '20',
     services: ['Massage', 'Companionship', 'VIP Service'],
     description: 'Professional massage therapist and companion for relaxation and entertainment.',
-    photo: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400',
-    photos: ['https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400'],
-    verification_status: 'approved',
-    phone: '+91 98765 43211',
-    email: 'anjali@example.com',
+    images: ['https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400'],
+    videoVerificationStatus: 'approved',
+    identityVerification: {
+      documentType: 'aadhar',
+      status: 'approved'
+    },
+    contactInfo: {
+      phone: '+91 98765 43211',
+      email: 'anjali@example.com'
+    },
+    availability: {
+      days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+      hours: '11:00 AM - 1:00 AM'
+    },
     height: '168',
-    weight: '58',
-    measurements: '36-28-38',
-    hair_color: 'Brown',
-    eye_color: 'Green',
-    ethnicity: 'Indian',
+    hairColor: 'Brown',
+    eyeColor: 'Green',
     languages: ['English', 'Hindi', 'Kannada'],
     createdAt: new Date('2024-01-10'),
     updatedAt: new Date('2024-01-10')
   },
   {
     id: '3',
+    slug: 'zara-delhi',
     name: 'Zara',
     age: 23,
     location: 'South Extension',
     city: 'Delhi',
     state: 'Delhi',
-    price: '18000',
-    currency: 'INR',
+    country: 'India',
+    type: 'independent',
+    photo: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400',
+    photos: ['https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400'],
+    pricing: {
+      oneShot: 18000,
+      twoShot: 30000,
+      threeShot: 42000,
+      fullNight: 60000,
+      currency: 'INR'
+    },
     rating: 4.7,
     reviews: 156,
     verified: true,
-    featured: true,
+    isPremium: true,
+    isActive: true,
     plan: '30',
     services: ['Companionship', 'Dinner Date', 'Party', 'Travel'],
     description: 'Young and energetic companion perfect for parties and social events.',
-    photo: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400',
-    photos: ['https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400'],
-    verification_status: 'approved',
-    phone: '+91 98765 43212',
-    email: 'zara@example.com',
+    images: ['https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400'],
+    videoVerificationStatus: 'approved',
+    identityVerification: {
+      documentType: 'aadhar',
+      status: 'approved'
+    },
+    contactInfo: {
+      phone: '+91 98765 43212',
+      email: 'zara@example.com'
+    },
+    availability: {
+      days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+      hours: '12:00 PM - 3:00 AM'
+    },
     height: '162',
-    weight: '52',
-    measurements: '32-24-34',
-    hair_color: 'Black',
-    eye_color: 'Brown',
-    ethnicity: 'Indian',
+    hairColor: 'Black',
+    eyeColor: 'Brown',
     languages: ['English', 'Hindi', 'Urdu'],
     createdAt: new Date('2024-01-20'),
     updatedAt: new Date('2024-01-20')
@@ -164,7 +205,7 @@ export default function FeaturedProfiles() {
                 
                 {/* Overlay Badges */}
                 <div className="absolute top-4 left-4 flex flex-col gap-2">
-                  {profile.isVerified && (
+                  {profile.verified && (
                     <div className="verified-badge">
                       <Shield className="h-3 w-3 mr-1" />
                       Verified
@@ -192,7 +233,7 @@ export default function FeaturedProfiles() {
 
                 {/* Price Badge */}
                 <div className="absolute bottom-4 right-4 bg-black/70 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                  {formatPrice(profile.price)}
+                  {formatPrice(profile.pricing.oneShot)}
                 </div>
               </div>
 
@@ -212,7 +253,7 @@ export default function FeaturedProfiles() {
                       <Star className="h-4 w-4 text-yellow-400 mr-1" />
                       <span className="font-semibold">{profile.rating}</span>
                       <span className="text-muted-foreground ml-1">
-                        ({profile.reviewCount})
+                        ({profile.reviews})
                       </span>
                     </div>
                   </div>
