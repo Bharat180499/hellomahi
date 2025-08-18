@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from 'react'
+
 
 interface UserAdminData {
   id: string | number
@@ -39,7 +39,7 @@ export function useUserAdmin() {
           console.log('useUserAdmin: No valid data found')
           setIsAuthenticated(false)
         }
-      } catch (error) {
+      } catch {
         console.error('Error loading user data:', error)
         // Clear invalid data
         localStorage.removeItem('userAdminData')

@@ -2,25 +2,13 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Textarea } from '@/components/ui/textarea'
-import { 
-  ArrowLeft, 
-  Building, 
-  User, 
-  Mail, 
-  Phone, 
-  MapPin, 
-  Shield, 
-  Save, 
-  X,
-  Upload,
-  CheckCircle,
-  AlertCircle
-} from 'lucide-react'
+import { ArrowLeft, X, Save, Building, User, Mail, Phone, MapPin, Globe, FileText, Shield, Upload, CheckCircle } from 'lucide-react'
+
 
 export default function AddAgencyPage() {
   const router = useRouter()

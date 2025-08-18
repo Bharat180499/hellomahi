@@ -1,25 +1,10 @@
 "use client"
 
-import { useState } from 'react'
+
 import { Button } from '@/components/ui/button'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { Badge } from '@/components/ui/badge'
-import { 
-  MoreVertical, 
-  Edit, 
-  Trash2, 
-  Reply, 
-  Forward,
-  Check,
-  CheckCheck,
-  Clock,
-  Image as ImageIcon,
-  File,
-  MapPin,
-  Calendar,
-  Play,
-  Pause
-} from 'lucide-react'
+
+import { Check, CheckCheck, File, Calendar, Clock, MapPin, MoreVertical, Edit, Trash2, Reply, Info, Save, Image } from 'lucide-react'
 import type { Message } from '@/types/messaging'
 
 interface MessageBubbleProps {
@@ -40,7 +25,7 @@ export default function MessageBubble({
   onEdit
 }: MessageBubbleProps) {
   const [showActions, setShowActions] = useState(false)
-  const [isEditing, setIsEditing] = useState(false)
+  
   const [editContent, setEditContent] = useState(message.content)
 
   const isEditingThisMessage = editingMessage?.id === message.id

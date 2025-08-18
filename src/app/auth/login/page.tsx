@@ -1,22 +1,11 @@
 "use client"
 
-import { useState } from 'react'
+
 import Link from 'next/link'
-import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { 
-  User, 
-  Building, 
-  Crown, 
-  Mail, 
-  Lock, 
-  Eye, 
-  EyeOff,
-  ArrowRight,
-  Shield,
-  CheckCircle,
-  HelpCircle
-} from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { HelpCircle, Eye, EyeOff, Shield, Crown, CheckCircle, Mail, ArrowRight, Lock, Building, User } from 'lucide-react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
@@ -29,7 +18,7 @@ export default function LoginPage() {
     password: '',
     rememberMe: false
   })
-  const [showPassword, setShowPassword] = useState(false)
+  
   const [isLoading, setIsLoading] = useState(false)
 
   const handleSubmit = async (e: React.FormEvent) => {

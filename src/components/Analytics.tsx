@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect } from 'react'
+
 
 interface AnalyticsProps {
   pageType: 'city' | 'escort' | 'agency' | 'home'

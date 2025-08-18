@@ -2,34 +2,20 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { 
-  Calendar, 
-  Clock, 
-  User, 
-  MapPin, 
-  Phone, 
-  Mail, 
-  Star,
-  CheckCircle,
-  XCircle,
-  AlertCircle,
-  MoreVertical,
-  Filter,
-  Search,
-  Eye,
-  MessageCircle,
-  ArrowRight,
-  ArrowLeft
-} from 'lucide-react'
+import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { CheckCircle, AlertCircle, XCircle, Clock, Filter, Calendar, User, MapPin, MoreVertical, Phone, Mail, Star, Eye, MessageCircle } from 'lucide-react'
+
+
+
 
 export default function EscortBookingsPage() {
-  const [activeTab, setActiveTab] = useState('upcoming')
+  
   const [selectedStatus, setSelectedStatus] = useState('all')
   const [showFilterModal, setShowFilterModal] = useState(false)
+  const [activeTab, setActiveTab] = useState('upcoming')
 
   const bookings = [
     {

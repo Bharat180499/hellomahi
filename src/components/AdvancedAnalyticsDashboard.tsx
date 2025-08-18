@@ -1,32 +1,10 @@
 "use client"
 
-import { useState } from 'react'
+
+import { CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { 
-  TrendingUp, 
-  TrendingDown, 
-  DollarSign, 
-  Users, 
-  Calendar,
-  Star,
-  Eye,
-  MessageCircle,
-  Heart,
-  MapPin,
-  Clock,
-  Target,
-  Award,
-  BarChart3,
-  PieChart,
-  Activity,
-  Filter,
-  Download,
-  RefreshCw,
-  ArrowUp,
-  ArrowDown,
-  Minus
-} from 'lucide-react'
+import { Card, CardContent } from '@/components/ui/card'
+import { Download, RefreshCw, Eye, Star, Calendar, MapPin, DollarSign, Users, MessageCircle, ArrowUp, ArrowDown, Activity, BarChart3, PieChart, TrendingUp, Award, Target, User, Minus } from 'lucide-react'
 
 interface AnalyticsData {
   period: string

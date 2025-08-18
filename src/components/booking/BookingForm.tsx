@@ -1,20 +1,15 @@
 "use client"
 
-import { useState } from 'react'
+
+import { CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Badge } from '@/components/ui/badge'
+import { Card, CardContent } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
-import { Badge } from '@/components/ui/badge'
-import { 
-  Calendar,
-  Clock,
-  MapPin,
-  CreditCard,
-  Shield,
-  CheckCircle,
-  AlertCircle
-} from 'lucide-react'
+import { CheckCircle, Shield, Clock, Calendar, MapPin, AlertCircle, CreditCard } from 'lucide-react'
+
+
 import type { Escort, Service } from '@/types/escort'
 
 interface BookingFormProps {
@@ -104,7 +99,7 @@ export default function BookingForm({ escort, onClose, onSuccess }: BookingFormP
       const bookingId = `booking_${Date.now()}`
       onSuccess(bookingId)
       setStep('confirmation')
-    } catch (error) {
+    } catch {
       console.error('Error creating booking:', error)
     } finally {
       setIsLoading(false)
@@ -117,7 +112,7 @@ export default function BookingForm({ escort, onClose, onSuccess }: BookingFormP
       // Mock payment processing
       await new Promise(resolve => setTimeout(resolve, 3000))
       setStep('confirmation')
-    } catch (error) {
+    } catch {
       console.error('Error processing payment:', error)
     } finally {
       setIsLoading(false)

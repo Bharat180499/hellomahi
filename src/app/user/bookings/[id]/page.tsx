@@ -4,31 +4,11 @@ import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import { 
-  ArrowLeft,
-  Calendar, 
-  Clock, 
-  DollarSign, 
-  Star, 
-  MapPin,
-  Phone,
-  MessageCircle,
-  Edit,
-  Trash2,
-  CheckCircle,
-  XCircle,
-  AlertCircle,
-  Download,
-  Share2,
-  User,
-  Shield,
-  CreditCard,
-  FileText,
-  Clock as ClockIcon
-} from 'lucide-react'
+
+import { Download, ArrowLeft, Share2, Shield, User, MessageCircle, Phone, Calendar, Clock, DollarSign, MapPin, FileText, AlertCircle, Edit, XCircle, Trash2, Star, X, CreditCard, Info, ClockIcon } from 'lucide-react'
 import UserNavigation from '@/components/UserNavigation'
 
 interface BookingDetail {

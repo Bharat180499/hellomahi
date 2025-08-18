@@ -1,19 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { 
-  Shield, 
-  AlertTriangle, 
-  Phone, 
-  MessageCircle,
-  MapPin,
-  Clock,
-  Users,
-  CheckCircle,
-  XCircle,
-  Info,
-  Heart,
-  Eye
-} from 'lucide-react'
+import { AlertTriangle, Phone, Shield, CheckCircle, XCircle, Heart, MessageCircle, Eye, Info } from 'lucide-react'
+
 
 export default function SafetyPage() {
   const safetyTips = [

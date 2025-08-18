@@ -1,24 +1,10 @@
 "use client"
 
-import { useState } from 'react'
+
+import { CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { 
-  Search, 
-  Filter, 
-  MapPin, 
-  Star, 
-  DollarSign, 
-  Calendar,
-  Users,
-  Shield,
-  Crown,
-  X,
-  SlidersHorizontal,
-  Heart,
-  Clock,
-  Award
-} from 'lucide-react'
+import { Card, CardContent } from '@/components/ui/card'
+import { SlidersHorizontal, Search, Filter, Star, DollarSign, Shield, Crown, Sun, X, Award } from 'lucide-react'
 
 interface SearchFilters {
   location: string

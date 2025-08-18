@@ -1,9 +1,10 @@
 "use client"
 
 import React from 'react'
+import { CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { AlertTriangle, RefreshCw } from 'lucide-react'
+import { Card, CardContent } from '@/components/ui/card'
+import { RefreshCw, Info, AlertTriangle } from 'lucide-react'
 
 interface ErrorBoundaryState {
   hasError: boolean

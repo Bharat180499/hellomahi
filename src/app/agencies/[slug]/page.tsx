@@ -3,28 +3,12 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'next/navigation'
 import Image from 'next/image'
-import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { 
-  Star, 
-  MapPin, 
-  Phone, 
-  Mail, 
-  Globe, 
-  Clock,
-  CheckCircle,
-  Shield,
-  Users,
-  Calendar,
-  ArrowLeft,
-  MessageCircle,
-  Heart,
-  Share2,
-  Award,
-  TrendingUp
-} from 'lucide-react'
+import { ArrowLeft, CheckCircle, Award, Users, Star, Phone, Mail, MapPin, Globe, Clock, Shield, Heart, Share2, MessageCircle, Calendar, TrendingUp } from 'lucide-react'
+
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { agencies } from '@/lib/api/agencies'
@@ -36,8 +20,10 @@ export default function AgencyProfilePage() {
   
   const [agency, setAgency] = useState<Agency | null>(null)
   const [isLoading, setIsLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
   const [isFavorite, setIsFavorite] = useState(false)
   const [activeTab, setActiveTab] = useState('overview')
+  
 
   // Mock agency data
   const mockAgency: Agency = {
@@ -138,7 +124,7 @@ export default function AgencyProfilePage() {
       // For now, use mock data
       setAgency(mockAgency)
       agencies.incrementViews(mockAgency.id)
-    } catch (error) {
+    } catch {
       console.error('Error loading agency:', error)
     } finally {
       setIsLoading(false)

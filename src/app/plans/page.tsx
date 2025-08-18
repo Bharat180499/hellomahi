@@ -1,28 +1,11 @@
 "use client"
 
-import { useState, useEffect } from 'react'
+
 import { useRouter, useSearchParams } from 'next/navigation'
-import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { 
-  Check, 
-  Crown, 
-  Star, 
-  Shield, 
-  Users,
-  Camera,
-  MessageCircle,
-  Heart,
-  TrendingUp,
-  Zap,
-  Gift,
-  ArrowRight,
-  User,
-  Building,
-  Crown as EscortIcon,
-  Quote,
-  HelpCircle
-} from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Check, Zap, Gift, HelpCircle, Search, Star, Heart, Users, Shield, Crown, MessageCircle, X, ArrowRight, Camera, Upload, Video, TrendingUp, Building, User } from 'lucide-react'
 import type { Plan, UserType } from '@/types'
 import { Input } from '@/components/ui/input';
 

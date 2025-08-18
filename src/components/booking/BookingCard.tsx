@@ -1,35 +1,11 @@
 "use client"
 
-import { useState } from 'react'
-import { Button } from '@/components/ui/button'
+
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import { 
-  Calendar, 
-  Clock, 
-  MapPin, 
-  DollarSign, 
-  Star, 
-  User,
-  Phone,
-  Mail,
-  MessageCircle,
-  Edit,
-  Trash2,
-  Download,
-  Share2,
-  CheckCircle,
-  XCircle,
-  AlertCircle,
-  Clock as ClockIcon,
-  Eye,
-  MoreVertical,
-  Phone as PhoneIcon,
-  Mail as MailIcon,
-  MapPin as MapPinIcon,
-  Calendar as CalendarIcon,
-  Clock as ClockIcon2
-} from 'lucide-react'
+
+import { Download, Eye, Star, Calendar, Clock, MapPin, DollarSign, CheckCircle, XCircle, AlertCircle, Phone, Mail, MessageCircle, X, MoreVertical, Edit, Info, ClockIcon, CalendarIcon, MapPinIcon, PhoneIcon, MailIcon, Share2, ClockIcon2 } from 'lucide-react'
 import Image from 'next/image'
 import type { Booking } from '@/types/bookings'
 

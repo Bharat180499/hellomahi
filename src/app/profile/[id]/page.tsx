@@ -4,19 +4,8 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import VideoVerificationBadge from '@/components/VideoVerificationBadge'
 import { formatPrice, formatDate } from '@/lib/utils'
-import { 
-  Star, 
-  MapPin, 
-  Phone, 
-  MessageCircle, 
-  Heart,
-  Clock,
-  Calendar,
-  Shield,
-  Crown,
-  Users,
-  Award
-} from 'lucide-react'
+import { Crown, Heart, MapPin, Star, Phone, MessageCircle, Clock, Calendar, Users } from 'lucide-react'
+
 import type { Escort } from '@/types'
 
 // Mock data - in real app this would come from API

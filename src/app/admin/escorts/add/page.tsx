@@ -2,31 +2,18 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
-import { 
-  ArrowLeft,
-  Crown,
-  Mail,
-  Phone,
-  MapPin,
-  Calendar,
-  Save,
-  X,
-  Eye,
-  EyeOff,
-  Camera,
-  Star,
-  DollarSign,
-  FileText,
-  Shield
-} from 'lucide-react'
+import { Label } from '@/components/ui/label'
+import { Textarea } from '@/components/ui/textarea'
+import { ArrowLeft, X, Save, User, Mail, Phone, MapPin, Calendar, FileText, Shield, Users, Globe, Crown, EyeOff, Eye, DollarSign, Camera, Upload, CheckCircle } from 'lucide-react'
+
 
 export default function AddEscortPage() {
   const router = useRouter()
   const [isSubmitting, setIsSubmitting] = useState(false)
-  const [showPassword, setShowPassword] = useState(false)
+  
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -127,7 +114,7 @@ export default function AddEscortPage() {
       
       alert('Escort profile created successfully!')
       router.push('/admin/escorts')
-    } catch (error) {
+    } catch {
       alert('Error creating escort profile. Please try again.')
     } finally {
       setIsSubmitting(false)

@@ -1,31 +1,11 @@
 "use client"
 
-import { useState } from 'react'
+
 import Link from 'next/link'
-import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { 
-  HelpCircle, 
-  MessageCircle, 
-  Phone, 
-  Mail, 
-  Search,
-  Plus,
-  ChevronDown,
-  ChevronUp,
-  FileText,
-  Shield,
-  CreditCard,
-  User,
-  Calendar,
-  Star,
-  Send,
-  Clock,
-  CheckCircle,
-  AlertCircle,
-  ArrowRight,
-  Download
-} from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { Tabs } from '@/components/ui/tabs'
+import { HelpCircle, ChevronDown, ChevronUp, Send, Download, Search, Filter, Star, Calendar, Shield, Phone, Mail, MessageCircle, Plus, ArrowRight, CreditCard, Info, User } from 'lucide-react'
 import UserNavigation from '@/components/UserNavigation'
 
 interface FAQItem {
@@ -51,7 +31,7 @@ interface SupportTicket {
 export default function UserSupportPage() {
   const [searchTerm, setSearchTerm] = useState('')
   const [selectedCategory, setSelectedCategory] = useState<string>('all')
-  const [showContactForm, setShowContactForm] = useState(false)
+  
   const [activeTab, setActiveTab] = useState<'faq' | 'tickets' | 'contact'>('faq')
 
   const faqItems: FAQItem[] = [

@@ -1,31 +1,13 @@
 'use client'
 
-import { useState } from 'react'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
+
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
+import { Button } from '@/components/ui/button'
+
 import { Input } from '@/components/ui/input'
-import { getStatusColor } from '@/lib/admin-utils'
-import { 
-  DollarSign, 
-  Search, 
-  Filter, 
-  Download, 
-  Eye, 
-  CreditCard,
-  Calendar,
-  TrendingUp,
-  TrendingDown,
-  Users,
-  Building,
-  CheckCircle,
-  XCircle,
-  Clock,
-  AlertCircle,
-  ChevronLeft,
-  ChevronRight,
-  MoreVertical
-} from 'lucide-react'
+
+import { Download, ChevronLeft, ChevronRight, Search, Filter, Eye, Clock, CheckCircle, XCircle, AlertCircle, X, MoreVertical, CreditCard, TrendingUp, User } from 'lucide-react'
 
 export default function AdminPaymentsPage() {
   const [searchQuery, setSearchQuery] = useState('')

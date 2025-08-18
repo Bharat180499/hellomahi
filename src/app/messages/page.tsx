@@ -1,21 +1,13 @@
 "use client"
 
-import { useState, useEffect } from 'react'
+
+import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
+import { Input } from '@/components/ui/input'
+
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { 
-  Search, 
-  Filter, 
-  MoreVertical, 
-  MessageCircle,
-  Archive,
-  Trash2,
-  Settings,
-  Plus
-} from 'lucide-react'
+
 import type { Conversation, Message } from '@/types/messaging'
 import { messaging } from '@/lib/api/messaging'
 import ChatInterface from '@/components/messaging/ChatInterface'
@@ -40,7 +32,7 @@ export default function MessagesPage() {
       if (response.success) {
         setConversations(response.conversations)
       }
-    } catch (error) {
+    } catch {
       console.error('Failed to load conversations:', error)
     } finally {
       setIsLoading(false)

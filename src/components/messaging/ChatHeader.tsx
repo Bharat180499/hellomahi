@@ -1,21 +1,11 @@
 "use client"
 
-import { useState } from 'react'
+
 import { Button } from '@/components/ui/button'
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Badge } from '@/components/ui/badge'
-import { 
-  Phone, 
-  Video, 
-  Search, 
-  MoreVertical, 
-  Info,
-  Archive,
-  Ban,
-  Delete,
-  Settings,
-  Users
-} from 'lucide-react'
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+
+import { Ban, Delete, Search, Phone, Settings, MoreVertical, Video, Archive, Info, Activity, VideoCall, Image } from 'lucide-react'
 import type { Conversation } from '@/types/messaging'
 
 interface ChatHeaderProps {

@@ -1,42 +1,18 @@
 "use client"
 
-import { useState } from 'react'
-import { Button } from '@/components/ui/button'
+
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
 import { Input } from '@/components/ui/input'
 import { Switch } from '@/components/ui/switch'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { 
-  User, 
-  Bell, 
-  Shield, 
-  Lock, 
-  Eye, 
-  EyeOff,
-  Save,
-  X,
-  Edit,
-  Camera,
-  Mail,
-  Phone,
-  MapPin,
-  Globe,
-  Moon,
-  Sun,
-  LogOut,
-  Trash2,
-  AlertTriangle,
-  CheckCircle,
-  CreditCard,
-  DollarSign,
-  Download,
-  Calendar
-} from 'lucide-react'
+
+import { LogOut, Download, Eye, EyeOff, Calendar, DollarSign, Phone, Settings, X, Edit, Trash2, Camera, CreditCard, Lock, Info, User, Save } from 'lucide-react'
 
 export default function EscortSettingsPage() {
-  const [activeTab, setActiveTab] = useState('account')
-  const [isEditing, setIsEditing] = useState(false)
-  const [showPassword, setShowPassword] = useState(false)
+  
+  
+  
 
   const [billingData, setBillingData] = useState({
     plan: 'Premium',

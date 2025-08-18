@@ -1,18 +1,10 @@
 "use client"
 
-import { useState, useRef, useEffect } from 'react'
+import { useRef, useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
-import { 
-  Send, 
-  Smile, 
-  MapPin,
-  Calendar,
-  X,
-  Mic,
-  StopCircle
-} from 'lucide-react'
+import { Send, Smile, Mic, StopCircle, Star, Calendar, MapPin, X, Reply } from 'lucide-react'
 import type { Message } from '@/types/messaging'
 
 interface MessageInputProps {

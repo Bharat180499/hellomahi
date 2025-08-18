@@ -2,35 +2,12 @@
 
 import { useState, useEffect } from 'react'
 import { useParams, useRouter } from 'next/navigation'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
+import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { 
-  ArrowLeft, 
-  Building, 
-  Mail, 
-  Phone, 
-  MapPin, 
-  Calendar, 
-  Clock, 
-  Shield, 
-  Star,
-  MessageSquare,
-  DollarSign,
-  Activity,
-  Settings,
-  Ban,
-  CheckCircle,
-  AlertCircle,
-  Users,
-  TrendingUp,
-  FileText,
-  Award,
-  Globe,
-  CreditCard
-} from 'lucide-react'
+import { Ban, Star, Calendar, Clock, MapPin, Users, CheckCircle, AlertCircle, Phone, Mail, Settings, ArrowLeft, Edit, CreditCard, Globe, FileText, Info, Activity, TrendingUp, Building, User, MessageSquare, Image } from 'lucide-react'
 
 // Mock data for agency details
 const agencyDetails = {

@@ -1,13 +1,15 @@
 "use client"
 
-import { useState, useMemo, useEffect } from 'react'
-import { Button } from '@/components/ui/button'
+import { useMemo, useState } from 'react'
+import { Search, Filter, Eye, Star, MapPin, Crown, X, Lock, Unlock, Info } from 'lucide-react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
+
 import { Input } from '@/components/ui/input'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import Pagination from '@/components/Pagination'
-import { Eye, MapPin, Users, Crown, Lock, Search, Filter, Star, X } from 'lucide-react'
+
 import Link from 'next/link'
 
 interface City {

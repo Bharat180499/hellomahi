@@ -1,22 +1,11 @@
 "use client"
 
-import { useState } from 'react'
-import { Button } from '@/components/ui/button'
+
 import { Card, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import { 
-  CreditCard, 
-  Banknote, 
-  Smartphone, 
-  Wallet, 
-  MoreVertical,
-  Edit,
-  Trash2,
-  CheckCircle,
-  AlertCircle,
-  Shield,
-  Star
-} from 'lucide-react'
+
+import { Banknote, Smartphone, Wallet, Star, Shield, CheckCircle, AlertCircle, MoreVertical, Edit, Trash2, CreditCard } from 'lucide-react'
 import type { PaymentMethod } from '@/types/payments'
 
 interface PaymentMethodCardProps {

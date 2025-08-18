@@ -1,18 +1,10 @@
 "use client"
 
-import { useState } from 'react'
 import Link from 'next/link'
-import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
-import { 
-  Shield,
-  Users,
-  Star,
-  CheckCircle,
-  Crown,
-  ArrowRight,
-  Lock
-} from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { Shield, Users, Star, ArrowRight, Crown, Lock, CheckCircle } from 'lucide-react'
+
 
 export default function HeroSection() {
   return (

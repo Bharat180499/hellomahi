@@ -1,29 +1,11 @@
 "use client"
 
 import { useState } from 'react'
+import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { 
-  Users, 
-  Search, 
-  Filter, 
-  MoreVertical,
-  Star,
-  Calendar,
-  DollarSign,
-  MessageCircle,
-  Phone,
-  Mail,
-  MapPin,
-  Clock,
-  CheckCircle,
-  XCircle,
-  TrendingUp,
-  TrendingDown,
-  Eye,
-  Edit,
-  Trash2
-} from 'lucide-react'
+import { Badge } from '@/components/ui/badge'
+import { Input } from '@/components/ui/input'
+import { Search, Filter, Calendar, Clock, MapPin, DollarSign, CheckCircle, XCircle, AlertCircle, Phone, Mail, Eye, Star, Users, TrendingUp, User, MessageCircle, Edit, MoreVertical } from 'lucide-react'
 import AgencyNavigation from '@/components/AgencyNavigation'
 
 export default function AgencyClientsPage() {

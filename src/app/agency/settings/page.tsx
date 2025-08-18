@@ -1,30 +1,16 @@
 "use client"
 
-import { useState } from 'react'
-import { Button } from '@/components/ui/button'
+
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { 
-  Settings, 
-  Shield, 
-  Bell, 
-  CreditCard, 
-  Users, 
-  Building,
-  Save,
-  Eye,
-  EyeOff,
-  Upload,
-  Camera,
-  Trash2,
-  Plus,
-  X
-} from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { Building, Shield, Bell, CreditCard, Users, EyeOff, Eye, Plus, Trash2 } from 'lucide-react'
+
 import AgencyNavigation from '@/components/AgencyNavigation'
 
 export default function AgencySettingsPage() {
   const [activeTab, setActiveTab] = useState<'profile' | 'security' | 'notifications' | 'billing' | 'team'>('profile')
   const [isLoading, setIsLoading] = useState(false)
-  const [showPassword, setShowPassword] = useState(false)
+  
   const [showNewPassword, setShowNewPassword] = useState(false)
 
   const [profileData, setProfileData] = useState({

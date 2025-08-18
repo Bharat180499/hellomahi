@@ -1,40 +1,13 @@
 "use client"
 
+
 import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { 
-  User, 
-  Calendar, 
-  DollarSign, 
-  Star, 
-  TrendingUp, 
-  TrendingDown,
-  Plus,
-  Eye,
-  MessageCircle,
-  Phone,
-  MapPin,
-  Clock,
-  Award,
-  Shield,
-  Crown,
-  BarChart3,
-  Activity,
-  Target,
-  ArrowRight,
-  MoreVertical,
-  Filter,
-  Search,
-  Heart,
-  Clock as ClockIcon,
-  CheckCircle,
-  XCircle,
-  AlertCircle,
-  Settings
-} from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { CheckCircle, Clock, XCircle, AlertCircle, Plus, TrendingUp, Calendar, DollarSign, Star, Heart, ArrowRight, Activity, Search, MessageCircle, Settings } from 'lucide-react'
+
 import UserNavigation from '@/components/UserNavigation'
 
 export default function UserDashboardPage() {
@@ -149,7 +122,7 @@ export default function UserDashboardPage() {
   const getStatusIcon = (status: string) => {
     switch (status) {
       case 'available': return <CheckCircle className="h-4 w-4 text-green-600" />
-      case 'busy': return <ClockIcon className="h-4 w-4 text-yellow-600" />
+      case 'busy': return <Clock className="h-4 w-4 text-yellow-600" />
       case 'unavailable': return <XCircle className="h-4 w-4 text-red-600" />
       default: return <AlertCircle className="h-4 w-4 text-gray-600" />
     }

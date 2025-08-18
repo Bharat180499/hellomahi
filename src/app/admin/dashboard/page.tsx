@@ -3,43 +3,24 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
 import ThemeToggle from '@/components/ThemeToggle'
-import { getStatusColor, getVerificationStatusColor, getTypeColor, getIconColor } from '@/lib/admin-utils'
-import { 
-  Users, 
-  Crown, 
-  Building, 
-  DollarSign, 
-  Calendar, 
-  TrendingUp, 
-  TrendingDown,
-  Plus,
-  Eye,
-  MessageCircle,
-  Phone,
-  MapPin,
-  Clock,
-  Shield,
-  BarChart3,
-  Activity,
-  ArrowRight,
-  MoreVertical,
-  Filter,
-  Search,
-  CheckCircle,
-  XCircle,
-  AlertCircle,
-  Settings,
-  User,
-  Star,
-  FileText,
-  HelpCircle
-} from 'lucide-react'
+import { getVerificationStatusColor, getTypeColor, getIconColor } from '@/lib/admin-utils'
+import { HelpCircle, Calendar, Clock, MapPin, DollarSign, Users, Shield, Crown, AlertCircle, Settings, ArrowRight, FileText, Activity, BarChart3, TrendingUp, Building, User, Image as LucideImage } from 'lucide-react'
 
 export default function AdminDashboardPage() {
   const [selectedPeriod, setSelectedPeriod] = useState<'7d' | '30d' | '90d'>('30d')
+
+  const getStatusColor = (status: string) => {
+    switch (status) {
+      case 'confirmed': return 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300'
+      case 'completed': return 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300'
+      case 'pending': return 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300'
+      case 'cancelled': return 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300'
+      default: return 'bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-300'
+    }
+  }
 
   const adminStats = {
     totalUsers: 2847,

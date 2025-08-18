@@ -1,22 +1,14 @@
 "use client"
 
-import { useState, useEffect } from 'react'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
+
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
-import { 
-  Search, 
-  Filter, 
-  Star, 
-  Plus,
-  MessageSquare,
-  TrendingUp,
-  CheckCircle,
-  AlertTriangle
-} from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { Avatar } from '@/components/ui/avatar'
+import { Input } from '@/components/ui/input'
+
+
 import type { Review, Rating, ReviewFilters } from '@/types/reviews'
-import { reviewSystem } from '@/lib/api/reviews'
+
 import ReviewCard from '@/components/reviews/ReviewCard'
 import ReviewForm from '@/components/reviews/ReviewForm'
 import RatingDisplay from '@/components/reviews/RatingDisplay'
@@ -196,7 +188,7 @@ export default function ReviewsPage() {
       setRating(mockRating)
       setIsHasMore(false) // No more pages in mock data
       setCurrentPage(page)
-    } catch (error) {
+    } catch {
       console.error('Failed to load reviews:', error)
     } finally {
       setIsLoading(false)
@@ -236,7 +228,7 @@ export default function ReviewsPage() {
       setReviews(prev => [newReview, ...prev])
       setShowReviewForm(false)
       setSelectedEscort(null)
-    } catch (error) {
+    } catch {
       console.error('Failed to submit review:', error)
     }
   }

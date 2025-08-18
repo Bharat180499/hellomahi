@@ -1,26 +1,14 @@
 "use client"
 
-import { useState, useEffect } from 'react'
+
+import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { 
-  CreditCard, 
-  Plus,
-  History,
-  TrendingUp,
-  Wallet,
-  Download,
-  Filter,
-  Search,
-  DollarSign,
-  CheckCircle,
-  XCircle,
-  Clock,
-  AlertCircle
-} from 'lucide-react'
+import { Tabs } from '@/components/ui/tabs'
+
+import { History, Wallet, Download, Search, Filter, Clock, DollarSign, CheckCircle, XCircle, AlertCircle, Plus, X, Edit, CreditCard } from 'lucide-react'
 import type { PaymentMethod, PaymentTransaction } from '@/types/payments'
-import { paymentSystem } from '@/lib/api/payments'
+
 import PaymentMethodCard from '@/components/payments/PaymentMethodCard'
 import PaymentForm from '@/components/payments/PaymentForm'
 import Header from '@/components/Header'
@@ -179,7 +167,7 @@ export default function PaymentsPage() {
       
       setPaymentMethods(mockPaymentMethods)
       setTransactions(mockTransactions)
-    } catch (error) {
+    } catch {
       console.error('Failed to load payment data:', error)
     } finally {
       setIsLoading(false)
@@ -225,7 +213,7 @@ export default function PaymentsPage() {
 
       setTransactions(prev => [newTransaction, ...prev])
       setShowPaymentForm(false)
-    } catch (error) {
+    } catch {
       console.error('Payment failed:', error)
     }
   }

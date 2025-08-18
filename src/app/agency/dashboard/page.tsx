@@ -3,33 +3,10 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { 
-  Building, 
-  Users, 
-  DollarSign, 
-  Calendar, 
-  Star, 
-  TrendingUp, 
-  TrendingDown,
-  Plus,
-  Eye,
-  MessageCircle,
-  Phone,
-  MapPin,
-  Clock,
-  Award,
-  Shield,
-  Crown,
-  BarChart3,
-  Activity,
-  Target,
-  ArrowRight,
-  MoreVertical,
-  Filter,
-  Search
-} from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Calendar, Clock, MapPin, DollarSign, Users, CheckCircle, AlertCircle, TrendingUp, Star, Activity, BarChart3, ArrowRight, Plus } from 'lucide-react'
 import AgencyNavigation from '@/components/AgencyNavigation'
 
 export default function AgencyDashboardPage() {

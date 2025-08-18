@@ -1,33 +1,11 @@
 "use client"
 
-import { useState } from 'react'
+
+import { CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { 
-  CreditCard, 
-  Wallet, 
-  Banknote, 
-  DollarSign, 
-  Shield, 
-  CheckCircle,
-  Clock,
-  AlertCircle,
-  Download,
-  Eye,
-  EyeOff,
-  Plus,
-  Trash2,
-  Edit,
-  Copy,
-  ExternalLink,
-  ArrowRight,
-  ArrowLeft,
-  Calendar,
-  MapPin,
-  User,
-  Phone,
-  Mail
-} from 'lucide-react'
+import { Tabs } from '@/components/ui/tabs'
+import { Card, CardContent } from '@/components/ui/card'
+import { Wallet, Banknote, Download, Calendar, Clock, DollarSign, CheckCircle, Plus, X, ArrowRight, ArrowLeft, Edit, Trash2, CreditCard, Tabs } from 'lucide-react'
 
 interface PaymentMethod {
   id: string
@@ -57,7 +35,7 @@ interface Transaction {
 
 export default function PaymentIntegrationUI() {
   const [activeTab, setActiveTab] = useState<'methods' | 'transactions' | 'payouts'>('methods')
-  const [showAddMethod, setShowAddMethod] = useState(false)
+  
   const [selectedPaymentType, setSelectedPaymentType] = useState<'card' | 'upi' | 'netbanking' | 'wallet'>('card')
 
   const [paymentMethods, setPaymentMethods] = useState<PaymentMethod[]>([

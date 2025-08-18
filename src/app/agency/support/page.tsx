@@ -1,32 +1,16 @@
 "use client"
 
-import { useState } from 'react'
-import { Button } from '@/components/ui/button'
+
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { 
-  MessageCircle, 
-  Phone, 
-  Mail, 
-  Clock, 
-  HelpCircle,
-  FileText,
-  Video,
-  Send,
-  Plus,
-  Search,
-  Filter,
-  Star,
-  CheckCircle,
-  AlertCircle,
-  Info
-} from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { HelpCircle, Send, Search, Star, Phone, Mail, MessageCircle, Settings, Plus, Video, FileText, Download, Tabs } from 'lucide-react'
 import AgencyNavigation from '@/components/AgencyNavigation'
 
 export default function AgencySupportPage() {
   const [activeTab, setActiveTab] = useState<'tickets' | 'faq' | 'contact' | 'resources'>('tickets')
   const [selectedCategory, setSelectedCategory] = useState('all')
   const [searchQuery, setSearchQuery] = useState('')
-  const [showNewTicketForm, setShowNewTicketForm] = useState(false)
+  
   const [helpfulFaqs, setHelpfulFaqs] = useState<Set<number>>(new Set())
 
   const supportTickets = [

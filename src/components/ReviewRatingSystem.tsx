@@ -1,28 +1,10 @@
 "use client"
 
-import { useState } from 'react'
+
+import { CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { 
-  Star, 
-  ThumbsUp, 
-  ThumbsDown, 
-  MessageCircle, 
-  Flag,
-  Heart,
-  Shield,
-  Crown,
-  Calendar,
-  User,
-  CheckCircle,
-  AlertCircle,
-  MoreVertical,
-  Edit,
-  Trash2,
-  Share2,
-  Filter,
-  SortAsc
-} from 'lucide-react'
+import { Card, CardContent } from '@/components/ui/card'
+import { ThumbsDown, Flag, Filter, Star, Calendar, CheckCircle, MessageCircle, MoreVertical, Tag, User, ThumbsUp, Image } from 'lucide-react'
 import Image from 'next/image'
 
 interface Review {

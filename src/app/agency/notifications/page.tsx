@@ -1,23 +1,10 @@
 "use client"
 
-import { useState } from 'react'
-import { Button } from '@/components/ui/button'
+
 import { Card, CardContent } from '@/components/ui/card'
-import { 
-  Bell, 
-  CheckCircle, 
-  Calendar,
-  DollarSign,
-  Shield,
-  Star,
-  MessageCircle,
-  Info,
-  AlertCircle,
-  Users,
-  Settings,
-  Search,
-  MoreVertical
-} from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { Settings, Bell, AlertCircle, CheckCircle, MoreVertical } from 'lucide-react'
+
 import AgencyNavigation from '@/components/AgencyNavigation'
 
 export default function AgencyNotificationsPage() {

@@ -3,30 +3,9 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { 
-  Calendar, 
-  Clock, 
-  DollarSign, 
-  Star, 
-  MapPin,
-  Phone,
-  MessageCircle,
-  Filter,
-  Search,
-  MoreVertical,
-  Eye,
-  Edit,
-  Trash2,
-  CheckCircle,
-  XCircle,
-  AlertCircle,
-  ArrowRight,
-  Download,
-  RefreshCw,
-  User
-} from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { Download, RefreshCw, CheckCircle, AlertCircle, XCircle, Calendar, Search, Star, Eye, User, MessageCircle, MoreVertical, Filter, Clock, MapPin, DollarSign, X, Info } from 'lucide-react'
 import UserNavigation from '@/components/UserNavigation'
 
 interface Booking {

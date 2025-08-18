@@ -1,26 +1,15 @@
 "use client"
 
-import { useState } from 'react'
-import { Button } from '@/components/ui/button'
+
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { 
-  Shield, 
-  Camera, 
-  CheckCircle, 
-  Clock, 
-  XCircle,
-  Upload,
-  Play,
-  AlertCircle,
-  Users,
-  Star,
-  Award,
-  ArrowRight
-} from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Users, Play, CheckCircle, AlertCircle, Upload, Shield, Award, Star, Camera } from 'lucide-react'
+
 import VideoVerificationBadge from '@/components/VideoVerificationBadge'
 
 export default function VerificationPage() {
-  const [currentStep, setCurrentStep] = useState(1)
+  
 
   const steps = [
     {

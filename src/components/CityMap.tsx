@@ -1,9 +1,9 @@
 "use client"
 
-import { useState, useEffect } from 'react'
+
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { MapPin, Navigation, Star } from 'lucide-react'
+import { Navigation, Star, MapPin } from 'lucide-react'
 
 interface Location {
   id: string

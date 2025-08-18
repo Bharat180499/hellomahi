@@ -2,13 +2,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
-import { 
-  MapPin, 
-  Users, 
-  Star, 
-  ArrowRight,
-  Crown
-} from 'lucide-react'
+import { Users, Star, ArrowRight, MapPin, Crown } from 'lucide-react'
+
 
 // Featured cities data
 const featuredCities = [

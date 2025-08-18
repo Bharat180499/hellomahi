@@ -2,31 +2,11 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useState } from 'react'
+
 import { useTheme } from 'next-themes'
 import { Button } from '@/components/ui/button'
 import ThemeToggle from '@/components/ThemeToggle'
-import { 
-  Search, 
-  Shield, 
-  Menu, 
-  X, 
-  BarChart3,
-  Users,
-  Crown,
-  Building,
-  Calendar,
-  TrendingUp,
-  DollarSign,
-  FileText,
-  Settings,
-  MessageCircle,
-  Bell,
-  HelpCircle,
-  Activity,
-  ChevronLeft,
-  ChevronRight
-} from 'lucide-react'
+import { Menu, HelpCircle, ChevronLeft, ChevronRight, Calendar, DollarSign, Users, Shield, Crown, Settings, Bell, X, FileText, Activity, BarChart3, TrendingUp, Building, User } from 'lucide-react'
 
 export default function AdminNavigation() {
   const [isCollapsed, setIsCollapsed] = useState(false)

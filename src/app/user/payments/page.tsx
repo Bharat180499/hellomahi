@@ -1,30 +1,11 @@
 "use client"
 
-import { useState } from 'react'
+
 import Link from 'next/link'
-import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { 
-  DollarSign, 
-  CreditCard, 
-  Wallet, 
-  Download,
-  Plus,
-  MoreVertical,
-  CheckCircle,
-  XCircle,
-  AlertCircle,
-  Clock,
-  Eye,
-  Trash2,
-  Edit,
-  Shield,
-  Lock,
-  ArrowRight,
-  Calendar,
-  MapPin,
-  User
-} from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { Tabs } from '@/components/ui/tabs'
+import { Wallet, Download, Search, Filter, Calendar, Clock, DollarSign, Shield, CheckCircle, XCircle, AlertCircle, Phone, Plus, X, ArrowRight, MoreVertical, Edit, Trash2, CreditCard, Info, User } from 'lucide-react'
 import UserNavigation from '@/components/UserNavigation'
 
 interface PaymentMethod {

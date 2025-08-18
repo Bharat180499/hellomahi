@@ -1,24 +1,13 @@
 "use client"
 
-import { useState, useEffect } from 'react'
+
 import { useRouter, useSearchParams } from 'next/navigation'
 import Link from 'next/link'
-import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { 
-  Crown, 
-  Mail, 
-  Lock, 
-  Phone, 
-  MapPin, 
-  Calendar,
-  Eye, 
-  EyeOff,
-  ArrowRight,
-  Shield,
-  CheckCircle,
-  ArrowLeft
-} from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { ArrowLeft, Crown, ArrowRight, Shield, CheckCircle, EyeOff, Eye } from 'lucide-react'
+
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
@@ -54,7 +43,7 @@ export default function EscortRegistrationPage() {
     marketingEmails: false,
     selectedPlan: searchParams.get('plan') || '20'
   })
-  const [showPassword, setShowPassword] = useState(false)
+  
   const [showConfirmPassword, setShowConfirmPassword] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
 

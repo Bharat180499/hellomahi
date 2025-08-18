@@ -1,34 +1,12 @@
 'use client'
 
 import { useState } from 'react'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Input } from '@/components/ui/input'
 import { getStatusColor, getPriorityColor } from '@/lib/admin-utils'
-import { 
-  MessageCircle, 
-  Search, 
-  Filter, 
-  Plus, 
-  Eye, 
-  Reply,
-  Clock,
-  CheckCircle,
-  XCircle,
-  AlertCircle,
-  ChevronLeft,
-  ChevronRight,
-  User,
-  Mail,
-  Phone,
-  Star,
-  FileText,
-  Download,
-  Archive,
-  Tag,
-  Calendar
-} from 'lucide-react'
+import { ChevronLeft, ChevronRight, Download, Search, Filter, Eye, Calendar, Clock, CheckCircle, AlertCircle, MessageCircle, Plus, Archive, Reply, User } from 'lucide-react'
 
 export default function AdminSupportPage() {
   const [searchQuery, setSearchQuery] = useState('')
@@ -202,15 +180,7 @@ export default function AdminSupportPage() {
 
 
 
-  const getStatusIcon = (status: string) => {
-    switch (status) {
-      case 'open': return <AlertCircle className="h-4 w-4 text-red-600 dark:text-red-400" />
-      case 'in_progress': return <Clock className="h-4 w-4 text-yellow-600 dark:text-yellow-400" />
-      case 'resolved': return <CheckCircle className="h-4 w-4 text-green-600 dark:text-green-400" />
-      case 'closed': return <XCircle className="h-4 w-4 text-gray-600 dark:text-gray-400" />
-      default: return <Clock className="h-4 w-4 text-gray-600 dark:text-gray-400" />
-    }
-  }
+
 
 
 

@@ -2,33 +2,30 @@
 
 import { useState, useEffect } from 'react'
 import { useParams, useRouter } from 'next/navigation'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
+import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { 
   ArrowLeft, 
+  MessageSquare, 
+  Settings, 
+  FileText, 
   Calendar, 
   Clock, 
   MapPin, 
-  DollarSign, 
-  Star,
-  MessageSquare,
-  Phone,
-  Mail,
-  User,
-  Crown,
-  Building,
-  CreditCard,
-  Activity,
-  Settings,
-  AlertCircle,
-  CheckCircle,
-  XCircle,
-  FileText,
-  Shield
+  User, 
+  Mail, 
+  Phone, 
+  Crown, 
+  Building, 
+  Activity, 
+  CheckCircle, 
+  Star, 
+  AlertCircle 
 } from 'lucide-react'
+
 
 // Mock data for booking details
 const bookingDetails = {

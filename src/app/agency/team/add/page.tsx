@@ -1,16 +1,9 @@
 "use client"
 
-import { useState } from 'react'
-import { Button } from '@/components/ui/button'
+
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { 
-  UserPlus, 
-  Mail, 
-  Phone,
-  Shield,
-  ArrowLeft,
-  Save
-} from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { UserPlus, Phone, Mail, Plus, ArrowLeft, Info, Save, User } from 'lucide-react'
 import Link from 'next/link'
 import AgencyNavigation from '@/components/AgencyNavigation'
 

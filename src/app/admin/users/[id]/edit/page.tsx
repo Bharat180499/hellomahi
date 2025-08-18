@@ -2,23 +2,13 @@
 
 import { useState, useEffect } from 'react'
 import { useRouter, useParams } from 'next/navigation'
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
-import { 
-  ArrowLeft,
-  User,
-  Mail,
-  Phone,
-  MapPin,
-  Calendar,
-  Save,
-  X,
-  Eye,
-  EyeOff,
-  Trash2,
-  AlertTriangle
-} from 'lucide-react'
+import { Label } from '@/components/ui/label'
+import { Textarea } from '@/components/ui/textarea'
+import { ArrowLeft, Trash2, X, Save, User, Mail, Phone, MapPin, Calendar, Shield, Users, Bell, EyeOff, Eye, AlertTriangle } from 'lucide-react'
+
 
 export default function EditUserPage() {
   const router = useRouter()
@@ -27,7 +17,7 @@ export default function EditUserPage() {
   
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isLoading, setIsLoading] = useState(true)
-  const [showPassword, setShowPassword] = useState(false)
+  
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -103,7 +93,7 @@ export default function EditUserPage() {
           notifications: mockUserData.notifications,
           notes: mockUserData.notes
         })
-      } catch (error) {
+      } catch {
         alert('Error loading user data')
         router.push('/admin/users')
       } finally {
@@ -163,7 +153,7 @@ export default function EditUserPage() {
       
       alert('User updated successfully!')
       router.push(`/admin/users/${userId}`)
-    } catch (error) {
+    } catch {
       alert('Error updating user. Please try again.')
     } finally {
       setIsSubmitting(false)

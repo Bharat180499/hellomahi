@@ -3,25 +3,15 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
-import { 
-  ArrowLeft,
-  User,
-  Mail,
-  Phone,
-  MapPin,
-  Calendar,
-  Save,
-  X,
-  Eye,
-  EyeOff
-} from 'lucide-react'
+import { ArrowLeft, User, Mail, Phone, Calendar, Save, X, Eye, EyeOff, Users, Info, Settings } from 'lucide-react'
 
 export default function AddUserPage() {
   const router = useRouter()
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showPassword, setShowPassword] = useState(false)
+  
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -78,7 +68,7 @@ export default function AddUserPage() {
       
       alert('User created successfully!')
       router.push('/admin/users')
-    } catch (error) {
+    } catch {
       alert('Error creating user. Please try again.')
     } finally {
       setIsSubmitting(false)

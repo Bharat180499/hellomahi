@@ -1,38 +1,14 @@
 "use client"
 
-import { useState, useEffect } from 'react'
+
+import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { 
-  Calendar, 
-  Clock, 
-  DollarSign, 
-  Star, 
-  MapPin,
-  Phone,
-  MessageCircle,
-  Filter,
-  Search,
-  MoreVertical,
-  Eye,
-  Edit,
-  Trash2,
-  CheckCircle,
-  XCircle,
-  AlertCircle,
-  ArrowRight,
-  Download,
-  RefreshCw,
-  Plus,
-  TrendingUp,
-  TrendingDown,
-  Users,
-  Calendar as CalendarIcon
-} from 'lucide-react'
+import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
+
+
+import { Download, RefreshCw, Search, Filter, Star, Calendar, DollarSign, Phone, Plus, Edit, TrendingUp } from 'lucide-react'
 import type { Booking, BookingStats } from '@/types/bookings'
-import { bookingSystem } from '@/lib/api/bookings'
+
 import BookingCard from '@/components/booking/BookingCard'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
@@ -41,7 +17,7 @@ export default function BookingsPage() {
   const [bookings, setBookings] = useState<Booking[]>([])
   const [stats, setStats] = useState<BookingStats | null>(null)
   const [isLoading, setIsLoading] = useState(false)
-  const [activeTab, setActiveTab] = useState('all')
+  
   const [selectedStatus, setSelectedStatus] = useState<string>('all')
   const [searchTerm, setSearchTerm] = useState('')
   const [selectedPeriod, setSelectedPeriod] = useState<'7d' | '30d' | '90d' | 'all'>('all')
@@ -175,7 +151,7 @@ export default function BookingsPage() {
       
       setBookings(mockBookings)
       setStats(mockStats)
-    } catch (error) {
+    } catch {
       console.error('Failed to load booking data:', error)
     } finally {
       setIsLoading(false)

@@ -1,32 +1,18 @@
 "use client"
 
-import { useState, useEffect } from 'react'
+
 import { useParams } from 'next/navigation'
 import Image from 'next/image'
-import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { 
-  Star, 
-  MapPin, 
-  Clock, 
-  Heart, 
-  Eye, 
-  MessageCircle,
-  CheckCircle,
-  Shield,
-  Calendar,
-  Phone,
-  Mail,
-  Share2,
-  ArrowLeft,
-  Play,
-  Download
-} from 'lucide-react'
+import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
+
+
+import { Download, Search, Eye, Star, Heart, Calendar, Clock, MapPin, Shield, CheckCircle, Phone, Mail, MessageCircle, Sun, ArrowLeft, Play, Video, Info, Share2 } from 'lucide-react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import { escorts } from '@/lib/api/escorts'
+
 import type { Escort } from '@/types/escort'
 
 export default function EscortProfilePage() {
@@ -37,7 +23,7 @@ export default function EscortProfilePage() {
   const [isLoading, setIsLoading] = useState(true)
   const [selectedPhoto, setSelectedPhoto] = useState(0)
   const [isFavorite, setIsFavorite] = useState(false)
-  const [activeTab, setActiveTab] = useState('overview')
+  
 
   // Mock escort data
   const mockEscort: Escort = {
@@ -233,7 +219,7 @@ export default function EscortProfilePage() {
       
       setEscort(mockEscort)
       escorts.incrementViews(escortId)
-    } catch (error) {
+    } catch {
       console.error('Error loading escort:', error)
     } finally {
       setIsLoading(false)
@@ -246,7 +232,7 @@ export default function EscortProfilePage() {
       if (success) {
         setIsFavorite(!isFavorite)
       }
-    } catch (error) {
+    } catch {
       console.error('Error toggling favorite:', error)
     }
   }

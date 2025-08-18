@@ -4,38 +4,11 @@ import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
-import { Badge } from '@/components/ui/badge'
 import ThemeToggle from '@/components/ThemeToggle'
-import { getStatusColor } from '@/lib/admin-utils'
-import { 
-  Building, 
-  Search, 
-  Filter, 
-  Plus, 
-  Eye, 
-  Edit, 
-  Ban, 
-  Trash2,
-  Download,
-  User,
-  MapPin,
-  Star,
-  DollarSign,
-  Calendar,
-  CheckCircle,
-  XCircle,
-  AlertCircle,
-  ArrowRight,
-  ChevronLeft,
-  ChevronRight,
-  Shield,
-  Phone,
-  Mail,
-  Users
-} from 'lucide-react'
+import { Ban, Download, ChevronLeft, ChevronRight, Search, Filter, Eye, Star, Calendar, MapPin, DollarSign, Users, Shield, CheckCircle, XCircle, AlertCircle, Phone, Mail, Plus, X, Edit, User, Image as LucideImage } from 'lucide-react'
 
 export default function AdminAgenciesPage() {
   const router = useRouter()

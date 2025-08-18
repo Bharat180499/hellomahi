@@ -1,23 +1,10 @@
 "use client"
 
-import { useState } from 'react'
+
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Button } from '@/components/ui/button'
-import { 
-  User, 
-  Calendar, 
-  DollarSign, 
-  Settings, 
-  MessageCircle, 
-  LogOut, 
-  Menu, 
-  X,
-  Crown,
-  Bell,
-  Search,
-  HelpCircle
-} from 'lucide-react'
+import { LogOut, Menu, HelpCircle, Search, Calendar, Crown, MessageCircle, Settings, Bell, X, User } from 'lucide-react'
 
 export default function EscortNavigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)

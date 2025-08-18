@@ -1,42 +1,15 @@
 'use client'
 
 import { useState } from 'react'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Badge } from '@/components/ui/badge'
 import { Input } from '@/components/ui/input'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import ThemeToggle from '@/components/ThemeToggle'
-import { 
-  Settings, 
-  Shield, 
-  Bell, 
-  Globe, 
-  DollarSign, 
-  Users, 
-  Database, 
-  Key,
-  Eye,
-  EyeOff,
-  Save,
-  RefreshCw,
-  AlertTriangle,
-  CheckCircle,
-  Clock,
-  Mail,
-  Phone,
-  MapPin,
-  Building,
-  CreditCard,
-  FileText,
-  Lock,
-  Unlock,
-  Wifi,
-  WifiOff
-} from 'lucide-react'
+import { Database, RefreshCw, DollarSign, Shield, Phone, Mail, Settings, Bell, Globe, Info, User, Save } from 'lucide-react'
 
 export default function AdminSettingsPage() {
   const [activeTab, setActiveTab] = useState('general')
-  const [showPassword, setShowPassword] = useState(false)
   const [isSaving, setIsSaving] = useState(false)
 
   // Mock settings data

@@ -1,28 +1,9 @@
 'use client'
 
-import { useState } from 'react'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import React, { useState } from 'react';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Badge } from '@/components/ui/badge'
-import { 
-  TrendingUp, 
-  TrendingDown, 
-  Users, 
-  Crown, 
-  Building, 
-  Calendar, 
-  DollarSign, 
-  Star,
-  BarChart3,
-  PieChart,
-  Activity,
-  Download,
-  Filter,
-  Calendar as CalendarIcon,
-  MapPin,
-  Eye,
-  EyeOff
-} from 'lucide-react'
+import { Download, Eye, Star, Calendar, MapPin, DollarSign, Users, Crown, Sun, Activity, BarChart3, PieChart, TrendingUp, TrendingDown, Building, User } from 'lucide-react'
 
 export default function AdminAnalyticsPage() {
   const [selectedPeriod, setSelectedPeriod] = useState('30d')

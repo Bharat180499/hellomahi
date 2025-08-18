@@ -3,30 +3,10 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { 
-  Calendar, 
-  Clock, 
-  MapPin, 
-  Star, 
-  MessageCircle, 
-  Phone,
-  Eye,
-  X,
-  CheckCircle,
-  AlertCircle,
-  Filter,
-  Search,
-  DollarSign,
-  User,
-  Users,
-  Calendar as CalendarIcon,
-  Clock as ClockIcon,
-  TrendingUp,
-  TrendingDown,
-  Plus
-} from 'lucide-react'
+import { Badge } from '@/components/ui/badge'
+import { Search, Filter, Calendar, Clock, MapPin, DollarSign, CheckCircle, XCircle, AlertCircle, Phone, Mail, Eye, Star, Plus, TrendingUp, CalendarIcon, ClockIcon, Users } from 'lucide-react'
 import AgencyNavigation from '@/components/AgencyNavigation'
 
 interface Booking {

@@ -1,32 +1,13 @@
 "use client"
 
-import { useState } from 'react'
-import { Button } from '@/components/ui/button'
+
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { 
-  BarChart3, 
-  TrendingUp, 
-  TrendingDown, 
-  DollarSign, 
-  Users, 
-  Calendar,
-  Download,
-  Filter,
-  Calendar as CalendarIcon,
-  PieChart,
-  Activity,
-  Target,
-  Award,
-  Clock,
-  Star,
-  CheckCircle,
-  XCircle,
-  Shield
-} from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { Download, Star, Calendar, Clock, DollarSign, Users, Shield, CheckCircle, XCircle, X, BarChart3, TrendingUp, TrendingDown, Award, Target, User } from 'lucide-react'
 import AgencyNavigation from '@/components/AgencyNavigation'
 
 export default function AgencyReportsPage() {
-  const [selectedPeriod, setSelectedPeriod] = useState('30')
+  
   const [selectedReport, setSelectedReport] = useState('overview')
 
   const periods = [

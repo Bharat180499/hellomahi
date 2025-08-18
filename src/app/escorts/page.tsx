@@ -1,24 +1,16 @@
 "use client"
 
-import { useState, useEffect } from 'react'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
+
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import { 
-  Search, 
-  Filter, 
-  MapPin, 
-  Star, 
-  Users, 
-  TrendingUp,
-  Grid,
-  List
-} from 'lucide-react'
+import { Input } from '@/components/ui/input'
+
+import { Grid, List, Search, Filter, MapPin, Users, User } from 'lucide-react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import EscortCard from '@/components/escort/EscortCard'
-import { escorts } from '@/lib/api/escorts'
+
 import type { Escort, EscortSearchParams, EscortSearchResponse } from '@/types/escort'
 
 export default function EscortsPage() {
@@ -181,7 +173,7 @@ export default function EscortsPage() {
         total_pages: 1,
         filters: searchParams
       })
-    } catch (error) {
+    } catch {
       console.error('Error loading escorts:', error)
     } finally {
       setIsLoading(false)

@@ -1,35 +1,15 @@
 "use client"
 
-import { useState } from 'react'
+
 import Link from 'next/link'
 import Image from 'next/image'
-import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { 
-  Building, 
-  Users, 
-  Mail, 
-  Phone, 
-  MapPin, 
-  Edit, 
-  Save, 
-  X, 
-  DollarSign, 
-  Calendar, 
-  Star, 
-  MessageCircle, 
-  LogOut, 
-  Shield, 
-  Eye, 
-  EyeOff, 
-  TrendingUp, 
-  Plus, 
-  Trash2
-} from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { LogOut, Star, Calendar, Users, Phone, MessageCircle, Plus, X, Edit, Trash2, Info, Building, User, Save } from 'lucide-react'
 
 export default function AgencyProfilePage() {
-  const [isEditing, setIsEditing] = useState(false)
-  const [activeTab, setActiveTab] = useState('profile')
+  
+  
 
   const [agencyData, setAgencyData] = useState({
     agencyName: 'Elite Escorts Mumbai',

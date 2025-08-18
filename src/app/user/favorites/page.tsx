@@ -1,29 +1,13 @@
 "use client"
 
+
 import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { 
-  Heart, 
-  Star, 
-  MapPin, 
-  DollarSign, 
-  MessageCircle,
-  Phone,
-  Eye,
-  Trash2,
-  Search,
-  Filter,
-  MoreVertical,
-  CheckCircle,
-  Clock,
-  XCircle,
-  ArrowRight,
-  Calendar,
-  Users
-} from 'lucide-react'
+import { CheckCircle, Clock, XCircle, Users, Heart, Star, Search, MoreVertical, MapPin, DollarSign, Eye, MessageCircle, Phone, Calendar } from 'lucide-react'
+
 import UserNavigation from '@/components/UserNavigation'
 
 interface FavoriteEscort {

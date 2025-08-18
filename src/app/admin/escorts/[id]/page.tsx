@@ -2,33 +2,12 @@
 
 import { useState, useEffect } from 'react'
 import { useParams, useRouter } from 'next/navigation'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { 
-  ArrowLeft, 
-  User, 
-  Mail, 
-  Phone, 
-  MapPin, 
-  Calendar, 
-  Clock, 
-  Shield, 
-  Star,
-  MessageSquare,
-  CreditCard,
-  Activity,
-  Settings,
-  Ban,
-  CheckCircle,
-  AlertCircle,
-  Building,
-  DollarSign,
-  Heart,
-  Eye
-} from 'lucide-react'
+import { Ban, Eye, Star, Calendar, Clock, MapPin, Shield, CheckCircle, AlertCircle, Phone, Mail, Settings, ArrowLeft, Edit, CreditCard, Info, Activity, User, MessageSquare, Image } from 'lucide-react'
 
 // Mock data for escort details
 const escortDetails = {

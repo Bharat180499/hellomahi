@@ -1,34 +1,12 @@
 "use client"
 
+
 import { useState } from 'react'
 import Link from 'next/link'
-import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { 
-  User, 
-  Calendar, 
-  DollarSign, 
-  Star, 
-  TrendingUp, 
-  TrendingDown,
-  Eye,
-  MessageCircle,
-  Phone,
-  MapPin,
-  Clock,
-  Award,
-  Shield,
-  Crown,
-  BarChart3,
-  Activity,
-  Target,
-  ArrowRight,
-  MoreVertical,
-  Filter,
-  Search,
-  Plus,
-  Settings
-} from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { Plus, TrendingUp, Eye, Calendar, Star, ArrowRight, User, DollarSign, MessageCircle, Activity } from 'lucide-react'
+
 
 export default function EscortDashboardPage() {
   const [selectedPeriod, setSelectedPeriod] = useState<'7d' | '30d' | '90d'>('30d')

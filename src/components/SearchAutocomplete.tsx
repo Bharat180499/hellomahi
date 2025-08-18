@@ -1,11 +1,13 @@
 "use client"
 
-import { useState, useEffect, useRef } from 'react'
+import { useRef, useState } from 'react'
+import { Search, Star, MapPin, Users, X, ArrowUp, ArrowDown, User } from 'lucide-react'
+import { CardContent } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
-import { Search, MapPin, Users, Star, X } from 'lucide-react'
-import { getCityData, searchCities } from '@/lib/cityData'
+
+import { searchCities } from '@/lib/cityData'
 
 interface SearchResult {
   type: 'city' | 'escort' | 'agency'
@@ -31,7 +33,7 @@ export default function SearchAutocomplete({
   onResultSelect,
   className
 }: SearchAutocompleteProps) {
-  const [query, setQuery] = useState('')
+  
   const [results, setResults] = useState<SearchResult[]>([])
   const [isOpen, setIsOpen] = useState(false)
   const [selectedIndex, setSelectedIndex] = useState(-1)

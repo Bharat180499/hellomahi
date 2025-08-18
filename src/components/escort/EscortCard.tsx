@@ -1,23 +1,16 @@
 "use client"
 
-import { useState } from 'react'
+
 import Image from 'next/image'
 import Link from 'next/link'
 import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
+
 import { Button } from '@/components/ui/button'
-import { 
-  Star, 
-  MapPin, 
-  Clock, 
-  Heart, 
-  Eye, 
-  MessageCircle,
-  CheckCircle,
-  Shield
-} from 'lucide-react'
+import { CheckCircle, Star, Heart, MapPin, Eye, MessageCircle } from 'lucide-react'
+
 import type { Escort } from '@/types/escort'
-import { escorts } from '@/lib/api/escorts'
+
 
 interface EscortCardProps {
   escort: Escort
@@ -53,7 +46,7 @@ export default function EscortCard({
         setIsFavorite(newFavoriteState)
         onFavoriteToggle?.(escort.id, newFavoriteState)
       }
-    } catch (error) {
+    } catch {
       console.error('Error toggling favorite:', error)
     } finally {
       setIsLoading(false)

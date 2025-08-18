@@ -2,19 +2,10 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { 
-  Filter, 
-  MapPin, 
-  DollarSign, 
-  Star,
-  Shield,
-  Crown,
-  X,
-  Lock,
-  ArrowRight
-} from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { Filter, MapPin, DollarSign, Star, Shield, Crown, Lock, ArrowRight, X } from 'lucide-react'
+
 
 export default function SearchFilters() {
   const [isExpanded, setIsExpanded] = useState(false)

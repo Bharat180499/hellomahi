@@ -1,41 +1,15 @@
 "use client"
 
-import { useState, useEffect } from 'react'
-import { Button } from '@/components/ui/button'
+import { useState } from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import { 
-  Search, 
-  Filter, 
-  MapPin, 
-  Star, 
-  DollarSign, 
-  Calendar,
-  Users,
-  Shield,
-  Crown,
-  X,
-  SlidersHorizontal,
-  Heart,
-  Clock,
-  Award,
-  Grid,
-  List,
-  ArrowUp,
-  ArrowDown,
-  Eye,
-  MessageCircle,
-  Phone,
-  Mail,
-  Share2,
-  Bookmark,
-  TrendingUp,
-  TrendingDown
-} from 'lucide-react'
+
+import { SlidersHorizontal, Grid, List, Search, Shield, Crown, MapPin, Star, Eye, MessageCircle, Heart, TrendingUp, TrendingDown, Phone, Mail, Share2, Bookmark, ArrowUp, ArrowDown, Filter, Sun } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import type { SearchResult, SearchFilters } from '@/types/search'
-import { searchSystem } from '@/lib/api/search'
+
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
@@ -198,7 +172,7 @@ export default function SearchResultsPage() {
       setSearchResults(mockSearchResults)
       setTotalResults(mockSearchResults.length)
       setHasMore(false)
-    } catch (error) {
+    } catch {
       console.error('Failed to load search results:', error)
     } finally {
       setIsLoading(false)

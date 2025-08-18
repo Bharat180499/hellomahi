@@ -1,37 +1,16 @@
 'use client'
 
 import { useState } from 'react'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { getStatusColor } from '@/lib/admin-utils'
-import { 
-  FileText, 
-  Download, 
-  Calendar, 
-  TrendingUp, 
-  TrendingDown, 
-  Users, 
-  Crown, 
-  Building, 
-  DollarSign,
-  BarChart3,
-  PieChart,
-  Activity,
-  Filter,
-  Eye,
-  Clock,
-  CheckCircle,
-  XCircle,
-  AlertCircle,
-  ChevronLeft,
-  ChevronRight,
-  Plus
-} from 'lucide-react'
+import { Button } from '@/components/ui/button'
+
+
+import { Download, ChevronLeft, ChevronRight, Filter, Eye, Clock, DollarSign, Users, Crown, CheckCircle, XCircle, AlertCircle, Plus, X, FileText, Activity, BarChart3, PieChart, User } from 'lucide-react'
 
 export default function AdminReportsPage() {
   const [selectedReport, setSelectedReport] = useState('all')
-  const [selectedPeriod, setSelectedPeriod] = useState('30d')
+  
   const [currentPage, setCurrentPage] = useState(1)
 
   // Mock data for reports

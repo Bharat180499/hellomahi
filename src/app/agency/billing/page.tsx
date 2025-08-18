@@ -1,20 +1,9 @@
 "use client"
 
 import { useState } from 'react'
-import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { 
-  CreditCard, 
-  Download, 
-  Calendar,
-  CheckCircle,
-  XCircle,
-  ArrowRight,
-  Star,
-  Shield,
-  Zap,
-  Crown
-} from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { Download, Zap, Calendar, Crown, CheckCircle, XCircle, X, CreditCard } from 'lucide-react'
 import AgencyNavigation from '@/components/AgencyNavigation'
 
 interface Plan {
@@ -28,7 +17,7 @@ interface Plan {
 
 export default function AgencyBillingPage() {
   const [selectedPlan, setSelectedPlan] = useState<string>('premium')
-  const [paymentMethod, setPaymentMethod] = useState('card')
+  
 
   const plans: Plan[] = [
     {

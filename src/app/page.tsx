@@ -1,4 +1,4 @@
-import { Suspense } from 'react'
+
 import HeroSection from '@/components/HeroSection'
 import SearchFilters from '@/components/SearchFilters'
 import CitiesSection from '@/components/CitiesSection'

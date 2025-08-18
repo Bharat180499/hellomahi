@@ -1,16 +1,9 @@
 "use client"
 
 import Link from 'next/link'
-import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
-import { 
-  Home, 
-  Search, 
-  MapPin, 
-  ArrowLeft,
-  Users,
-  Crown
-} from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { Home, Search, MapPin, Users, Crown, ArrowLeft, User } from 'lucide-react'
 
 export default function NotFound() {
   return (

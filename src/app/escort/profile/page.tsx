@@ -1,39 +1,21 @@
 "use client"
 
+
 import { useState } from 'react'
-import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
-import { Badge } from '@/components/ui/badge'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { 
-  User, 
-  Mail, 
-  Phone, 
-  MapPin, 
-  Edit, 
-  Save, 
-  X, 
-  Plus,
-  Trash2,
-  Camera,
-  Star,
-  Heart,
-  Clock,
-  DollarSign,
-  Shield,
-  Eye,
-  EyeOff,
-  Calendar,
-  Globe,
-  Languages,
-  CheckCircle
-} from 'lucide-react'
+import { X, Save, Edit, Camera, Clock, Heart, Plus, Calendar, Trash2, Globe } from 'lucide-react'
+
+
+
 
 export default function EscortProfilePage() {
-  const [isEditing, setIsEditing] = useState(false)
-  const [activeTab, setActiveTab] = useState('personal')
+  
+  
 
   const [profileData, setProfileData] = useState({
     name: 'Priya Sharma',
@@ -198,7 +180,7 @@ export default function EscortProfilePage() {
       // For demo purposes, show success after delay
       alert('Verification process initiated! Please have your verification code ready.')
       
-    } catch (error) {
+    } catch {
       console.error('Verification failed:', error)
       alert('Verification failed. Please try again.')
     } finally {

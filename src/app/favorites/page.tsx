@@ -1,45 +1,16 @@
 "use client"
 
-import { useState, useEffect } from 'react'
-import { Button } from '@/components/ui/button'
+
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { 
-  Heart, 
-  List, 
-  Grid, 
-  Search, 
-  Filter, 
-  Share2, 
-  Download, 
-  Upload,
-  Plus,
-  Edit,
-  Trash2,
-  Eye,
-  MessageCircle,
-  Phone,
-  Mail,
-  Star,
-  MapPin,
-  DollarSign,
-  Shield,
-  Crown,
-  Clock,
-  TrendingUp,
-  TrendingDown,
-  MoreVertical,
-  Bookmark,
-  Settings,
-  Users,
-  Calendar,
-  BarChart3
-} from 'lucide-react'
+
+
+import { List, Grid, Download, Search, Filter, Eye, Star, Heart, MapPin, DollarSign, Shield, Crown, MessageCircle, Plus, Edit, Trash2, Upload } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import type { Favorite, FavoriteList, FavoriteStats } from '@/types/favorites'
-import { favoriteSystem } from '@/lib/api/favorites'
+
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
@@ -48,7 +19,7 @@ export default function FavoritesPage() {
   const [lists, setLists] = useState<FavoriteList[]>([])
   const [stats, setStats] = useState<FavoriteStats | null>(null)
   const [isLoading, setIsLoading] = useState(false)
-  const [activeTab, setActiveTab] = useState('all')
+  
   const [selectedList, setSelectedList] = useState<string>('all')
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid')
   const [searchTerm, setSearchTerm] = useState('')
@@ -261,7 +232,7 @@ export default function FavoritesPage() {
       setFavorites(mockFavorites)
       setLists(mockLists)
       setStats(mockStats)
-    } catch (error) {
+    } catch {
       console.error('Failed to load favorites data:', error)
     } finally {
       setIsLoading(false)

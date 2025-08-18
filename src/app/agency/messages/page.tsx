@@ -1,28 +1,10 @@
 "use client"
 
-import { useState } from 'react'
-import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { 
-  MessageCircle, 
-  Search, 
-  Send, 
-  MoreVertical,
 
-  Image,
-  Paperclip,
-  Smile,
-  Check,
-  Clock,
-  User,
-  Users,
-  Star,
-  Filter,
-  Archive,
-  Trash2,
-  Reply,
-  Forward
-} from 'lucide-react'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Send, Paperclip, Smile, Check, Search, Filter, Clock, MessageCircle, MoreVertical, Image } from 'lucide-react'
 import AgencyNavigation from '@/components/AgencyNavigation'
 
 export default function AgencyMessagesPage() {

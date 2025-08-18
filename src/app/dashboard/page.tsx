@@ -1,23 +1,12 @@
 "use client"
 
-import { useState } from 'react'
-import { Button } from '@/components/ui/button'
+
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { 
-  User, 
-  Shield, 
-  Crown, 
-  Upload, 
-  Clock, 
-  CheckCircle, 
-  XCircle,
-  Edit,
-  Camera,
-  Settings,
-  Bell,
-  Calendar,
-  DollarSign
-} from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Avatar } from '@/components/ui/avatar'
+import { Edit, Camera, Shield, Crown, DollarSign, Settings, Bell, Calendar, Upload } from 'lucide-react'
+
 import VideoVerificationBadge from '@/components/VideoVerificationBadge'
 import { formatDate } from '@/lib/utils'
 
@@ -36,7 +25,7 @@ const mockUser = {
 }
 
 export default function DashboardPage() {
-  const [isEditing, setIsEditing] = useState(false)
+  
   const [uploadProgress, setUploadProgress] = useState(0)
 
   const daysUntilExpiry = Math.ceil((mockUser.planExpiry.getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24))

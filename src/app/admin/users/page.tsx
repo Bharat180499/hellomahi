@@ -2,39 +2,12 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
-import Link from 'next/link'
 import Image from 'next/image'
-import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import ThemeToggle from '@/components/ThemeToggle'
-import { getStatusColor } from '@/lib/admin-utils'
-import { 
-  Users, 
-  Search, 
-  Filter, 
-  Plus, 
-  Eye, 
-  Edit, 
-  Ban, 
-  Trash2,
-  Download,
-  MoreVertical,
-  User,
-  Mail,
-  Phone,
-  MapPin,
-  Calendar,
-  Star,
-  DollarSign,
-  Clock,
-  CheckCircle,
-  XCircle,
-  AlertCircle,
-  ArrowRight,
-  ChevronLeft,
-  ChevronRight
-} from 'lucide-react'
+import { Ban, Download, ChevronLeft, ChevronRight, Search, Filter, Eye, Calendar, Clock, MapPin, DollarSign, Users, CheckCircle, XCircle, AlertCircle, Phone, Mail, Plus, X, Edit, Trash2, Activity, User, Image as LucideImage } from 'lucide-react'
 
 export default function AdminUsersPage() {
   const router = useRouter()
@@ -114,6 +87,15 @@ export default function AdminUsersPage() {
   ]
 
 
+
+  const getStatusColor = (status: string) => {
+    switch (status) {
+      case 'active': return 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300'
+      case 'inactive': return 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300'
+      case 'banned': return 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300'
+      default: return 'bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-300'
+    }
+  }
 
   const getStatusIcon = (status: string) => {
     switch (status) {

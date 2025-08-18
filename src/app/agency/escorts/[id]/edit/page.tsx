@@ -3,22 +3,12 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { 
-  ArrowLeft, 
-  Save, 
-  Camera, 
-  Upload, 
-  Shield,
-  Crown,
-  CheckCircle,
-  AlertCircle,
-  Eye,
-  EyeOff,
-  ToggleLeft,
-  ToggleRight
-} from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Label } from '@/components/ui/label'
+import { Textarea } from '@/components/ui/textarea'
+import { ToggleLeft, ToggleRight, Phone, Sun, ArrowLeft, Edit, Upload, Info, Save, Image as LucideImage } from 'lucide-react'
 import AgencyNavigation from '@/components/AgencyNavigation'
 
 export default function EditEscortPage({ params }: { params: { id: string } }) {

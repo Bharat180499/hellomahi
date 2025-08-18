@@ -2,33 +2,10 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useState } from 'react'
+
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
-import { 
-  Search, 
-  User, 
-  Menu, 
-  X, 
-  Moon, 
-  Sun,
-  Crown,
-  Shield,
-  BarChart3,
-  Calendar,
-  DollarSign,
-  Settings,
-  MessageCircle,
-  Bell,
-  HelpCircle,
-  FileText,
-  TrendingUp,
-  Heart,
-  MapPin,
-  Star,
-  Clock,
-  Award
-} from 'lucide-react'
+import { Menu, HelpCircle, Star, Heart, Calendar, Clock, DollarSign, MessageCircle, Settings, Bell, Sun, Moon, X, BarChart3, User } from 'lucide-react'
 
 export default function UserNavigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)

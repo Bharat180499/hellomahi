@@ -1,29 +1,12 @@
 "use client"
 
-import { useState, useEffect, useRef, useCallback } from 'react'
+import { useRef, useCallback, useState } from 'react'
+import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { 
-  Send, 
-  Paperclip, 
-  Smile, 
-  MoreVertical, 
-  Phone, 
-  Video, 
-  Search,
-  Image as ImageIcon,
-  File,
-  MapPin,
-  Calendar,
-  X,
-  Edit,
-  Trash2,
-  Reply,
-  Forward
-} from 'lucide-react'
+
+import { Avatar, AvatarFallback } from '@/components/ui/avatar'
+import { Send, Paperclip, Smile, File, Search, Users, X, Edit, Video, Reply, User, VideoCall } from 'lucide-react'
 import type { 
   Message, 
   Conversation, 
@@ -76,7 +59,7 @@ export default function ChatInterface({
         setHasMore(response.hasMore)
         setCurrentPage(page)
       }
-    } catch (error) {
+    } catch {
       console.error('Failed to load messages:', error)
     } finally {
       setIsLoading(false)
@@ -103,7 +86,7 @@ export default function ChatInterface({
         onMessageSent?.(response.message)
         scrollToBottom()
       }
-    } catch (error) {
+    } catch {
       console.error('Failed to send message:', error)
     }
   }
@@ -115,7 +98,7 @@ export default function ChatInterface({
     setIsTyping(isTyping)
     try {
       await messaging.realtime.sendTyping(conversation.id, isTyping)
-    } catch (error) {
+    } catch {
       console.error('Failed to send typing status:', error)
     }
 
@@ -155,7 +138,7 @@ export default function ChatInterface({
         try {
           await messaging.messages.delete(message.id)
           setMessages(prev => prev.filter(m => m.id !== message.id))
-        } catch (error) {
+        } catch {
           console.error('Failed to delete message:', error)
         }
         break
@@ -170,7 +153,7 @@ export default function ChatInterface({
     try {
       await messaging.conversations.markAsRead(conversation.id)
       onConversationUpdate?.(conversation)
-    } catch (error) {
+    } catch {
       console.error('Failed to mark messages as read:', error)
     }
   }, [conversation, onConversationUpdate])

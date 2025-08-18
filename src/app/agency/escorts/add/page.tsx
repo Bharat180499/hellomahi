@@ -1,26 +1,14 @@
 "use client"
 
-import { useState } from 'react'
+
 import Link from 'next/link'
-import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import { 
-  Users, 
-  Plus, 
-  Camera, 
-  Upload, 
-  ArrowLeft,
-  Shield,
-  Crown,
-  CheckCircle,
-  AlertCircle,
-  Eye,
-  EyeOff,
-  Calendar,
-  Image as ImageIcon,
-  X
-} from 'lucide-react'
+import { Input } from '@/components/ui/input'
+import { ArrowLeft, Users, Crown, Calendar, Shield, AlertCircle, Camera, X, CheckCircle, ImageIcon } from 'lucide-react'
+
+
 import AgencyNavigation from '@/components/AgencyNavigation'
 
 export default function AddEscortPage() {
@@ -54,7 +42,7 @@ export default function AddEscortPage() {
     gallery: [] as File[]
   })
 
-  const [showPassword, setShowPassword] = useState(false)
+  
   const [isLoading, setIsLoading] = useState(false)
   const [selfieFile, setSelfieFile] = useState<File | null>(null)
   const [selfiePreview, setSelfiePreview] = useState<string | null>(null)

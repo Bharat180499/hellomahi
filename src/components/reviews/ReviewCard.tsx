@@ -1,32 +1,13 @@
 "use client"
 
-import { useState } from 'react'
-import { Button } from '@/components/ui/button'
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { Badge } from '@/components/ui/badge'
+
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
-import { 
-  Star, 
-  ThumbsUp, 
-  ThumbsDown, 
-  Flag, 
-  MessageCircle, 
-  MoreVertical,
-  Edit,
-  Trash2,
-  Reply,
-  CheckCircle,
-  Clock,
-  AlertTriangle,
-  Image as ImageIcon,
-  Video,
-  Calendar,
-  MapPin,
-  DollarSign,
-  Clock as ClockIcon
-} from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { ThumbsDown, Flag, Star, Calendar, Clock, MapPin, DollarSign, CheckCircle, MessageCircle, MoreVertical, Edit, Trash2, Video, Reply, User, AlertTriangle, ClockIcon, ImageIcon, ThumbsUp, Image } from 'lucide-react'
 import type { Review, ReviewResponse } from '@/types/reviews'
-import { reviewSystem } from '@/lib/api/reviews'
+
 
 interface ReviewCardProps {
   review: Review
@@ -67,7 +48,7 @@ export default function ReviewCard({
       })
       setUserVote(isHelpful ? 'helpful' : 'not-helpful')
       onVote?.(review.id, isHelpful)
-    } catch (error) {
+    } catch {
       console.error('Failed to vote:', error)
     } finally {
       setIsVoting(false)

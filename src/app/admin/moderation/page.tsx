@@ -3,36 +3,11 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
-import { getStatusColor } from '@/lib/admin-utils'
-import { 
-  Shield, 
-  Search, 
-  Filter, 
-  Eye, 
-  CheckCircle, 
-  XCircle, 
-  AlertCircle,
-  Clock,
-  User,
-  Crown,
-  Building,
-  FileText,
-  Flag,
-  MessageSquare,
-  Star,
-  Camera,
-  Download,
-  MoreVertical,
-  ArrowRight,
-  ChevronLeft,
-  ChevronRight,
-  Mail,
-  Phone,
-  MapPin
-} from 'lucide-react'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { Flag, Download, ChevronLeft, ChevronRight, Search, Filter, Eye, Star, Clock, MapPin, Shield, Crown, CheckCircle, XCircle, Settings, X, Camera, FileText, Building, User, MessageSquare, Image as LucideImage } from 'lucide-react'
 
 export default function AdminModerationPage() {
   const [activeTab, setActiveTab] = useState<'verification' | 'content' | 'reports'>('verification')
@@ -41,6 +16,15 @@ export default function AdminModerationPage() {
   const [currentPage, setCurrentPage] = useState(1)
   const [showAdvancedFilters, setShowAdvancedFilters] = useState(false)
   const [selectedItems, setSelectedItems] = useState<string[]>([])
+
+  const getStatusColor = (status: string) => {
+    switch (status) {
+      case 'approved': return 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300'
+      case 'rejected': return 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300'
+      case 'pending': return 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300'
+      default: return 'bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-300'
+    }
+  }
 
   const verificationQueue = [
     {

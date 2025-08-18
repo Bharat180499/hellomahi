@@ -1,33 +1,10 @@
 "use client"
 
-import { useState, useEffect } from 'react'
+
+import { CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { 
-  Bell, 
-  BellOff, 
-  Settings, 
-  Check, 
-  X, 
-  MessageCircle,
-  Calendar,
-  DollarSign,
-  Star,
-  Shield,
-  Crown,
-  Heart,
-  Eye,
-  Clock,
-  Filter,
-  Trash2,
-  Archive,
-  MoreVertical,
-  Volume2,
-  VolumeX,
-  Smartphone,
-  Mail,
-  Globe
-} from 'lucide-react'
+import { Card, CardContent } from '@/components/ui/card'
+import { BellOff, Check, Smartphone, Filter, Star, Calendar, DollarSign, Shield, Crown, Mail, MessageCircle, Settings, Trash2, Play, Archive, Volume2, Bell, Image } from 'lucide-react'
 import Image from 'next/image'
 
 interface Notification {

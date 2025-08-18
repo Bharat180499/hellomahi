@@ -1,6 +1,6 @@
 "use client"
 
-import { Star, TrendingUp, TrendingDown, Minus } from 'lucide-react'
+import { Star } from 'lucide-react'
 import type { Rating } from '@/types/reviews'
 
 interface RatingDisplayProps {

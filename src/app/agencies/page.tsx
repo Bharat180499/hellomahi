@@ -1,27 +1,11 @@
 "use client"
 
 import { useState, useEffect } from 'react'
+import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { 
-  Search, 
-  Filter, 
-  MapPin, 
-  Star, 
-  Users, 
-  Calendar,
-  Grid3X3,
-  List,
-  ArrowUp,
-  ArrowDown,
-  CheckCircle,
-  Shield,
-  Globe,
-  Phone,
-  Mail
-} from 'lucide-react'
+import { Input } from '@/components/ui/input'
+import { Grid3X3, List, Search, Filter, Star, MapPin, CheckCircle, Phone, Mail, X, ArrowUp, ArrowDown, Info } from 'lucide-react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { agencies } from '@/lib/api/agencies'
@@ -75,7 +59,7 @@ export default function AgenciesPage() {
       // For now, use mock data
       const mockAgencies = agencies.getMockAgencies()
       setAgenciesList(mockAgencies)
-    } catch (error) {
+    } catch {
       console.error('Error loading agencies:', error)
     } finally {
       setIsLoading(false)
