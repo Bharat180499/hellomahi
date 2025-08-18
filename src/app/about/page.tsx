@@ -1,6 +1,9 @@
 import Image from 'next/image'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
+import { Phone, Mail, MapPin } from 'lucide-react'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
 import { Users, Star, Globe, Heart, Shield, Phone, Mail, MapPin, Target } from 'lucide-react'
 
 import Header from '@/components/Header'

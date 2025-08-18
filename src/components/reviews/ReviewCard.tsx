@@ -1,6 +1,11 @@
 "use client"
 
 import { CardHeader } from '@/components/ui/card'
+import { Card, CardContent, CardHeader } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { Star, Edit, Trash2, MapPin, Clock, Calendar, DollarSign, CheckCircle, MessageCircle, Video, MoreVertical, Reply, Check, ThumbsUp, ThumbsDown, Flag, AlertTriangle, ImageIcon, ClockIcon, Check, Star, Calendar, DollarSign, MessageCircle, Trash2 } from 'lucide-react'
 
 import { AvatarImage } from '@/components/ui/avatar'
 import { ThumbsDown, Flag, Star, Calendar, DollarSign, CheckCircle, MessageCircle, MoreVertical, Trash2, Reply, AlertTriangle, ClockIcon, ImageIcon, ThumbsUp } from 'lucide-react'

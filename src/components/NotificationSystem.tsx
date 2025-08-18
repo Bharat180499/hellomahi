@@ -1,6 +1,9 @@
 "use client"
 
 import { CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Star, Trash2, Mail, Calendar, DollarSign, MessageCircle, Settings, Bell, Shield, Crown, Archive, Smartphone, Check, Volume2, BellOff, Check, Smartphone, Star, Calendar, DollarSign, Shield, Crown, MessageCircle, Settings, Trash2, Archive, Volume2, Bell } from 'lucide-react'
 
 import { BellOff, Check, Smartphone, Star, Calendar, DollarSign, Shield, Crown, MessageCircle, Settings, Trash2, Archive, Volume2, Bell } from 'lucide-react'
 import Image from 'next/image'

@@ -1,6 +1,9 @@
 "use client"
 
 import Link from 'next/link'
+import { Card, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Search, Star, Heart, Eye, User, Calendar, DollarSign, MessageCircle, Download, Activity, TrendingUp, ArrowRight, MoreVertical, RefreshCw, Star, Calendar, DollarSign, MessageCircle } from 'lucide-react'
 
 import Image from 'next/image'
 

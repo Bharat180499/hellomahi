@@ -1,6 +1,7 @@
 "use client"
 
 import { Star } from 'lucide-react'
+import { Star, Star } from 'lucide-react'
 import type { Rating } from '@/types/reviews'
 
 interface RatingDisplayProps {

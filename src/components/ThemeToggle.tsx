@@ -2,6 +2,8 @@
 
 import { useTheme } from 'next-themes'
 import { Button } from '@/components/ui/button'
+import { Sun, Moon } from 'lucide-react'
+import { Button } from '@/components/ui/button'
 import { Monitor, Sun, Moon } from 'lucide-react'
 
 

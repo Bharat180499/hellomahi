@@ -1,6 +1,8 @@
 "use client"
 
 import { useRef, useCallback, useState } from 'react'
+import { Button } from '@/components/ui/button'
+import { X, Reply } from 'lucide-react'
 
 import { Search, Reply } from 'lucide-react'
 import type { Message, Conversation, MessageRequest } from '@/types/messaging'

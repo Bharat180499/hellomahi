@@ -1,6 +1,11 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { Star, User, Users, Phone, Mail, MapPin, Clock, Calendar, CheckCircle, AlertCircle, Settings, Activity, TrendingUp, ArrowLeft, Ban, Globe, Building, FileText, CreditCard, Check, Check, Star, Calendar, Settings } from 'lucide-react'
 import { useParams, useRouter } from 'next/navigation'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'

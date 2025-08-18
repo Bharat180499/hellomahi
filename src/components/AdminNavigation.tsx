@@ -1,6 +1,8 @@
 "use client"
 
 import Link from 'next/link'
+import { Button } from '@/components/ui/button'
+import { X, Bell, Shield, Activity, ChevronLeft, ChevronRight, Shield, Bell } from 'lucide-react'
 import { usePathname } from 'next/navigation'
 
 import { useTheme } from 'next-themes'

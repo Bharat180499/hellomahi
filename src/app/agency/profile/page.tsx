@@ -2,6 +2,9 @@
 
 
 import Link from 'next/link'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Plus, Star, Edit, Trash2, X, MessageCircle, Save, LogOut, Star, MessageCircle, Trash2 } from 'lucide-react'
 import Image from 'next/image'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'

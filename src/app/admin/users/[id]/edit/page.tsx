@@ -1,6 +1,10 @@
 "use client"
 
 import { useState, useEffect } from 'react'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Eye, Trash2, X, User, Phone, Mail, Calendar, ArrowLeft, Save, AlertTriangle, Calendar, Trash2 } from 'lucide-react'
 import { useRouter, useParams } from 'next/navigation'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'

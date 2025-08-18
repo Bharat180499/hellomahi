@@ -1,6 +1,9 @@
 "use client"
 
 import { useRef, useState } from 'react'
+import { Button } from '@/components/ui/button'
+import { Textarea } from '@/components/ui/textarea'
+import { X, Send, Smile } from 'lucide-react'
 
 import { Textarea } from '@/components/ui/textarea'
 import { Mic, StopCircle, Star, Calendar, Reply } from 'lucide-react'

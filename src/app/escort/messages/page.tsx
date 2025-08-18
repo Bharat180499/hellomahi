@@ -3,6 +3,10 @@
 
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Badge } from '@/components/ui/badge'
+import { Search, Filter, User, MessageCircle, ArrowLeft, MoreVertical, Send, Paperclip, Smile, Ban, Archive, Check, CheckCheck, Check, MessageCircle, Archive } from 'lucide-react'
+import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Input } from '@/components/ui/input'
 

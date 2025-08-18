@@ -2,6 +2,9 @@
 
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Star, MapPin, Star } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Navigation, Star, MapPin } from 'lucide-react'
 

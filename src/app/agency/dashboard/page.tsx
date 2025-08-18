@@ -1,6 +1,9 @@
 "use client"
 
 import { useState } from 'react'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Plus, Star, User, Users, Calendar, TrendingUp, ArrowRight, BarChart3, Star, Calendar } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'

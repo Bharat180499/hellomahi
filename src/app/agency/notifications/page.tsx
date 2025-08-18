@@ -2,6 +2,9 @@
 
 
 import { Card, CardContent } from '@/components/ui/card'
+import { Card, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { CheckCircle, AlertCircle, Settings, Bell, MoreVertical, Check, Check, Settings, Bell } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Settings, Bell, AlertCircle, CheckCircle, MoreVertical } from 'lucide-react'
 

@@ -2,6 +2,9 @@
 
 
 import { CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Star, Heart, Eye, Edit, Trash2, DollarSign, MessageCircle, Camera, Upload, Play, Shield, Star, DollarSign, Shield, MessageCircle, Trash2 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Tabs } from '@/components/ui/tabs'

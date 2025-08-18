@@ -2,6 +2,9 @@
 
 
 import { CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Edit, User, Users, MapPin, Clock, Calendar, DollarSign, MessageCircle, Download, ClockIcon, CalendarIcon, Calendar, DollarSign, MessageCircle } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Tabs } from '@/components/ui/tabs'
 import { Card, CardContent } from '@/components/ui/card'

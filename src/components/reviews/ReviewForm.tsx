@@ -1,6 +1,13 @@
 "use client"
 
 import { CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { Label } from '@/components/ui/label'
+import { Textarea } from '@/components/ui/textarea'
+import { Star, X, MapPin, Clock, Calendar, DollarSign, CheckCircle, Upload, Check, ImageIcon, Check, Star, Calendar, DollarSign } from 'lucide-react'
 
 import { Textarea } from '@/components/ui/textarea'
 import { Label } from '@/components/ui/label'

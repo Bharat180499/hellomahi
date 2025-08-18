@@ -2,6 +2,9 @@
 
 
 import { useRouter, useSearchParams } from 'next/navigation'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Eye, CheckCircle, Shield, Crown, ArrowLeft, ArrowRight, Check, Check, Shield, Crown } from 'lucide-react'
 import Link from 'next/link'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'

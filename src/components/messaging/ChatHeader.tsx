@@ -1,6 +1,10 @@
 "use client"
 
 import { AvatarImage } from '@/components/ui/avatar'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { Search, Phone, Settings, Video, Info, MoreVertical, Ban, Archive, Settings, Archive } from 'lucide-react'
 
 import { Ban, Delete, Search, Settings, MoreVertical, Archive } from 'lucide-react'
 import type { Conversation } from '@/types/messaging'

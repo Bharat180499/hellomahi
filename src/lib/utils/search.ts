@@ -1,4 +1,5 @@
 import type { SearchFilters, SearchResult } from '@/types/search'
+import { Search } from 'lucide-react'
 
 /**
  * Filter search results based on provided filters
