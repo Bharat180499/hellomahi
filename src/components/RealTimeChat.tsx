@@ -2,7 +2,7 @@
 
 import { Card, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Search, Phone, Clock, Video, Shield, Crown, MoreVertical, Send, Paperclip, Smile, VideoCall, Check, CheckCheck } from 'lucide-react'
+import { Search, Phone, Clock, Video, Shield, Crown, MoreVertical, Send, Paperclip, Smile, VideoCall, Check, CheckCheck, File } from 'lucide-react'
 import { useRef, useState } from 'react'
 
 

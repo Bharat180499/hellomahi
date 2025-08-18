@@ -1,9 +1,13 @@
 'use client'
 
 import { Activity, AlertCircle, ArrowLeft, Building, Calendar, Check, CheckCircle, Clock, Crown, FileText, Mail, MapPin, MessageSquare, Phone, Settings, Star, User } from 'lucide-react'
-
 import { useState, useEffect } from 'react'
 import { useParams, useRouter } from 'next/navigation'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { Separator } from '@/components/ui/separator'
 
 // Mock data for booking details
 const bookingDetails = {
