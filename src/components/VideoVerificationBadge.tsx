@@ -1,13 +1,11 @@
 "use client"
 
-import { useState } from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { X, Clock, CheckCircle, XCircle, AlertCircle, Upload, Shield, Check, Check, Shield } from 'lucide-react'
+import { X, Clock, CheckCircle, XCircle, AlertCircle, Upload, Shield, Check } from 'lucide-react'
+import { useState } from 'react'
 
-import { CardHeader, CardTitle } from '@/components/ui/card'
 
-import { CheckCircle, XCircle, Shield, Upload, AlertCircle } from 'lucide-react'
 
 interface VideoVerificationBadgeProps {
   status: 'pending' | 'approved' | 'rejected'

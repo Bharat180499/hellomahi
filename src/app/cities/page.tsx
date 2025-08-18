@@ -1,11 +1,8 @@
+import { Card, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Search, Filter, Star, User, Users, ArrowRight, Lock } from 'lucide-react'
 import Link from 'next/link'
-import { Card, CardContent } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Search, Filter, Star, User, Users, ArrowRight, Lock, Star } from 'lucide-react'
 import Image from 'next/image'
-import { Button } from '@/components/ui/button'
-import { Card, CardContent } from '@/components/ui/card'
-import { Lock, ArrowRight, Search, Filter, Users, Star } from 'lucide-react'
 
 
 // Mock data for cities

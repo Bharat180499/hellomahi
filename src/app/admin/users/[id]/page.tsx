@@ -1,18 +1,13 @@
 'use client'
 
-import { useState, useEffect } from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { Star, User, Phone, Mail, MapPin, Clock, Calendar, CheckCircle, AlertCircle, Settings, Shield, Activity, ArrowLeft, Ban, CreditCard, Check, Check, Star, Calendar, Shield, Settings } from 'lucide-react'
-import { useParams, useRouter } from 'next/navigation'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { Ban, Star, Calendar, Clock, MapPin, Users, Shield, CheckCircle, AlertCircle, Phone, Mail, Settings, ArrowLeft, Edit, CreditCard, Info, Activity, User, MessageSquare, Image } from 'lucide-react'
+import { Star, User, Phone, Mail, MapPin, Clock, Calendar, CheckCircle, AlertCircle, Settings, Shield, Activity, ArrowLeft, Ban, CreditCard, Check, Users, Edit, Info, MessageSquare, Image } from 'lucide-react'
+import { useState, useEffect } from 'react'
+import { useParams, useRouter } from 'next/navigation'
 
 // Mock data for user details
 const userDetails = {

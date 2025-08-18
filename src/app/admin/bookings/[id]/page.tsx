@@ -1,17 +1,13 @@
 'use client'
 
-import { useState, useEffect } from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { Star, User, Phone, Mail, MapPin, Clock, Calendar, CheckCircle, AlertCircle, Settings, Crown, Activity, ArrowLeft, Building, FileText, Check, Check, Star, Calendar, Crown, Settings } from 'lucide-react'
-import { useParams, useRouter } from 'next/navigation'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
-import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { Star, User, Phone, Mail, MapPin, Clock, Calendar, CheckCircle, AlertCircle, Settings, Crown, Activity, ArrowLeft, Building, FileText, Check } from 'lucide-react'
+import { useState, useEffect } from 'react'
+import { useParams, useRouter } from 'next/navigation'
 import { 
   ArrowLeft, 
   MessageSquare, 

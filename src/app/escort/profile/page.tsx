@@ -1,21 +1,14 @@
 "use client"
 
 
-import { useState } from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Badge } from '@/components/ui/badge'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Textarea } from '@/components/ui/textarea'
-import { Plus, Heart, Edit, Trash2, X, Clock, Calendar, Camera, Save, Globe, Calendar, Trash2 } from 'lucide-react'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Badge } from '@/components/ui/badge'
-import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
-import { Input } from '@/components/ui/input'
-import { Textarea } from '@/components/ui/textarea'
-import { X, Save, Edit, Camera, Clock, Heart, Plus, Calendar, Trash2, Globe } from 'lucide-react'
+import { Plus, Heart, Edit, Trash2, X, Clock, Calendar, Camera, Save, Globe } from 'lucide-react'
+import { useState } from 'react'
 
 
 

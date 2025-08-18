@@ -1,11 +1,9 @@
+import { CardHeader, CardTitle, Card, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Search, Filter, Star, X, DollarSign, Shield, Crown, Award, SlidersHorizontal } from 'lucide-react'
 "use client"
 
-import { CardHeader, CardTitle } from '@/components/ui/card'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Search, Filter, Star, X, DollarSign, Shield, Crown, Award, Star, DollarSign, Shield, Crown } from 'lucide-react'
 
-import { SlidersHorizontal, Search, Star, DollarSign, Shield, Crown, Award } from 'lucide-react'
 
 interface SearchFilters {
   location: string

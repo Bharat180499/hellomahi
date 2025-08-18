@@ -1,16 +1,12 @@
 "use client"
 
 
-import { Card, CardContent } from '@/components/ui/card'
+
+
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { Plus, Search, Star, Calendar, DollarSign, TrendingUp, RefreshCw, Star, Calendar, DollarSign } from 'lucide-react'
-import { Button } from '@/components/ui/button'
-import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
-
-
-import { Download, RefreshCw, Search, Filter, Star, Calendar, DollarSign, Phone, Plus, Edit, TrendingUp } from 'lucide-react'
+import { Plus, Search, Star, Calendar, DollarSign, TrendingUp, RefreshCw, Download, Filter, Phone, Edit } from 'lucide-react'
 import type { Booking, BookingStats } from '@/types/bookings'
 
 import BookingCard from '@/components/booking/BookingCard'

@@ -1,12 +1,10 @@
 "use client"
 
-import { CardHeader, CardTitle } from '@/components/ui/card'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+
+import { CardHeader, CardTitle, Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import { Star, Eye, Edit, X, Phone, Mail, MapPin, Clock, Calendar, DollarSign, CheckCircle, XCircle, AlertCircle, MessageCircle, Download, MoreVertical, Share2, Check, CalendarIcon, Check, Star, Calendar, DollarSign, MessageCircle } from 'lucide-react'
-
-import { Download, Eye, Star, Calendar, DollarSign, CheckCircle, XCircle, AlertCircle, MessageCircle, MoreVertical, CalendarIcon, Share2 } from 'lucide-react'
+import { Star, Eye, Edit, X, Phone, Mail, MapPin, Clock, Calendar, DollarSign, CheckCircle, XCircle, AlertCircle, MessageCircle, Download, MoreVertical, Share2, Check, CalendarIcon } from 'lucide-react'
 import Image from 'next/image'
 import type { Booking } from '@/types/bookings'
 

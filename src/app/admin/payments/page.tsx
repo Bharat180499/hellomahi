@@ -1,18 +1,13 @@
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Badge } from '@/components/ui/badge'
+import { Search, Filter, Eye, X, Clock, CheckCircle, XCircle, AlertCircle, Download, TrendingUp, ChevronLeft, ChevronRight, MoreVertical, CreditCard, Check, User } from 'lucide-react'
 'use client'
 
 
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { Badge } from '@/components/ui/badge'
-import { Search, Filter, Eye, X, Clock, CheckCircle, XCircle, AlertCircle, Download, TrendingUp, ChevronLeft, ChevronRight, MoreVertical, CreditCard, Check, Check } from 'lucide-react'
-import { Badge } from '@/components/ui/badge'
-import { Button } from '@/components/ui/button'
 
-import { Input } from '@/components/ui/input'
 
-import { Download, ChevronLeft, ChevronRight, Search, Filter, Eye, Clock, CheckCircle, XCircle, AlertCircle, X, MoreVertical, CreditCard, TrendingUp, User } from 'lucide-react'
 
 export default function AdminPaymentsPage() {
   const [searchQuery, setSearchQuery] = useState('')

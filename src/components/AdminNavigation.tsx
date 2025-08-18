@@ -1,14 +1,12 @@
 "use client"
 
-import Link from 'next/link'
 import { Button } from '@/components/ui/button'
-import { X, Bell, Shield, Activity, ChevronLeft, ChevronRight, Shield, Bell } from 'lucide-react'
+import { X, Bell, Shield, Activity, ChevronLeft, ChevronRight, Menu, HelpCircle, Calendar, DollarSign, Users, Crown, Settings, FileText, BarChart3, TrendingUp, Building, User } from 'lucide-react'
+import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 import { useTheme } from 'next-themes'
-import { Button } from '@/components/ui/button'
 import ThemeToggle from '@/components/ThemeToggle'
-import { Menu, HelpCircle, ChevronLeft, ChevronRight, Calendar, DollarSign, Users, Shield, Crown, Settings, Bell, X, FileText, Activity, BarChart3, TrendingUp, Building, User } from 'lucide-react'
 
 export default function AdminNavigation() {
   const [isCollapsed, setIsCollapsed] = useState(false)

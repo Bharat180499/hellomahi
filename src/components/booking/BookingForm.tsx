@@ -1,16 +1,13 @@
 "use client"
 
-import { CardHeader, CardTitle } from '@/components/ui/card'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+
+
+import { CardHeader, CardTitle, Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Badge } from '@/components/ui/badge'
 import { Label } from '@/components/ui/label'
-import { MapPin, Clock, Calendar, CheckCircle, AlertCircle, Shield, CreditCard, Check, Check, Calendar, Shield } from 'lucide-react'
-
-import { Label } from '@/components/ui/label'
-import { CheckCircle, Shield, Calendar, AlertCircle, CreditCard } from 'lucide-react'
-
+import { MapPin, Clock, Calendar, CheckCircle, AlertCircle, Shield, CreditCard, Check } from 'lucide-react'
 import type { Escort, Service } from '@/types/escort'
 
 interface BookingFormProps {

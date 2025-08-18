@@ -1,14 +1,10 @@
 "use client"
 
 
-import { CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Edit, User, Users, MapPin, Clock, Calendar, DollarSign, MessageCircle, Download, ClockIcon, CalendarIcon, Calendar, DollarSign, MessageCircle } from 'lucide-react'
+import { CardContent, CardHeader, CardTitle, Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Tabs } from '@/components/ui/tabs'
-import { Card, CardContent } from '@/components/ui/card'
-import { Download, Calendar, Clock, MapPin, DollarSign, Users, Phone, MessageCircle, Edit, User, ClockIcon, CalendarIcon, Tabs, Image } from 'lucide-react'
+import { Edit, User, Users, MapPin, Clock, Calendar, DollarSign, MessageCircle, Download, ClockIcon, CalendarIcon, Phone, Tabs, Image } from 'lucide-react'
 import Image from 'next/image'
 
 interface Booking {

@@ -1,15 +1,11 @@
 "use client"
 
 
-import { CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Star, Heart, Eye, Edit, Trash2, DollarSign, MessageCircle, Camera, Upload, Play, Shield, Star, DollarSign, Shield, MessageCircle, Trash2 } from 'lucide-react'
+import { CardContent, CardHeader, CardTitle, Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Tabs } from '@/components/ui/tabs'
-import { Card, CardContent } from '@/components/ui/card'
-import { Grid, List, Filter, Eye, EyeOff, Star, Heart, DollarSign, Shield, Crown, MessageCircle, Settings, Sun, Edit, Trash2, Camera, Upload, Play, Video, Info, Award, Tabs, Image } from 'lucide-react'
+import { Star, Heart, Eye, Edit, Trash2, DollarSign, MessageCircle, Camera, Upload, Play, Shield, Grid, List, Filter, EyeOff, Crown, Settings, Sun, Video, Info, Award, Tabs, Image } from 'lucide-react'
 import Image from 'next/image'
 
 interface MediaItem {

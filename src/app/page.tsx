@@ -1,6 +1,6 @@
 
-import HeroSection from '@/components/HeroSection'
 import { Search } from 'lucide-react'
+import HeroSection from '@/components/HeroSection'
 import SearchFilters from '@/components/SearchFilters'
 import CitiesSection from '@/components/CitiesSection'
 import Header from '@/components/Header'

@@ -1,19 +1,15 @@
 "use client"
 
-import { useState } from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
-import { Plus, Search, Star, Eye, Edit, Trash2, X, MapPin, Calendar, CheckCircle, XCircle, AlertCircle, Download, Shield, ChevronLeft, ChevronRight, Ban, Check, Check, Star, Calendar, Shield, Trash2 } from 'lucide-react'
+import { Plus, Search, Star, Eye, Edit, Trash2, X, MapPin, Calendar, CheckCircle, XCircle, AlertCircle, Download, Shield, ChevronLeft, ChevronRight, Ban, Check, Filter, Phone, Image as LucideImage } from 'lucide-react'
+import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
 import ThemeToggle from '@/components/ThemeToggle'
 import { getVerificationStatusColor } from '@/lib/admin-utils'
-import { Ban, Download, ChevronLeft, ChevronRight, Search, Filter, Eye, Star, Calendar, MapPin, Shield, CheckCircle, XCircle, AlertCircle, Phone, Plus, X, Edit, Trash2, Image as LucideImage } from 'lucide-react'
 
 export default function AdminEscortsPage() {
   const router = useRouter()

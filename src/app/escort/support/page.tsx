@@ -1,11 +1,9 @@
+import { CardHeader, CardTitle, Card, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Plus, Search, Phone, Mail, Download, ArrowRight, ChevronUp, ChevronDown, Send, HelpCircle, Calendar, Shield, CreditCard } from 'lucide-react'
 "use client"
 
-import { CardHeader, CardTitle } from '@/components/ui/card'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Plus, Search, Phone, Mail, Download, ArrowRight, ChevronUp, ChevronDown, Send, HelpCircle } from 'lucide-react'
 
-import { HelpCircle, ChevronDown, ChevronUp, Download, Search, Calendar, Shield, Plus, ArrowRight, CreditCard } from 'lucide-react'
 
 interface FAQItem {
   id: string

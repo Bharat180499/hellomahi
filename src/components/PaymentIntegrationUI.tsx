@@ -1,11 +1,9 @@
+import { CardHeader, CardTitle, Card, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Plus, Edit, Trash2, Clock, Calendar, DollarSign, CheckCircle, Download, ArrowLeft, ArrowRight, Ban, CreditCard, Wallet, Check, Banknote } from 'lucide-react'
 "use client"
 
-import { CardHeader, CardTitle } from '@/components/ui/card'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Plus, Edit, Trash2, Clock, Calendar, DollarSign, CheckCircle, Download, ArrowLeft, ArrowRight, Ban, CreditCard, Wallet, Check, Check, Calendar, DollarSign, Trash2 } from 'lucide-react'
 
-import { Wallet, Banknote, Download, Calendar, DollarSign, CheckCircle, Plus, ArrowRight, ArrowLeft, Trash2, CreditCard } from 'lucide-react'
 
 interface PaymentMethod {
   id: string

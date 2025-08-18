@@ -1,22 +1,18 @@
 "use client"
 
 
+
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Badge } from '@/components/ui/badge'
-import { Search, Filter, User, MessageCircle, ArrowLeft, MoreVertical, Send, Paperclip, Smile, Ban, Archive, Check, CheckCheck, Check, MessageCircle, Archive } from 'lucide-react'
-import { Button } from '@/components/ui/button'
-import { Badge } from '@/components/ui/badge'
-import { Input } from '@/components/ui/input'
-
+import { Search, Filter, User, MessageCircle, ArrowLeft, MoreVertical, Send, Paperclip, Smile, Ban, Archive, Check, CheckCheck, Image } from 'lucide-react'
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
-import { Send, Paperclip, Smile, Check, CheckCheck, Ban, Search, Filter, MessageCircle, ArrowLeft, MoreVertical, Archive, User, Image } from 'lucide-react'
 
 export default function EscortMessagesPage() {
   const [selectedChat, setSelectedChat] = useState<string | null>('1')

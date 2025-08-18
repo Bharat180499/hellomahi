@@ -2,9 +2,7 @@
 
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { ChevronUp, ChevronDown } from 'lucide-react'
-import { ChevronDown, ChevronUp } from 'lucide-react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 

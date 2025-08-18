@@ -1,15 +1,12 @@
 "use client"
 
 
-import { useRouter, useSearchParams } from 'next/navigation'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Eye, CheckCircle, Shield, Crown, ArrowLeft, ArrowRight, Check, Check, Shield, Crown } from 'lucide-react'
-import Link from 'next/link'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
-import { ArrowLeft, Crown, ArrowRight, Shield, CheckCircle, EyeOff, Eye } from 'lucide-react'
+import { Eye, CheckCircle, Shield, Crown, ArrowLeft, ArrowRight, Check, EyeOff } from 'lucide-react'
+import { useRouter, useSearchParams } from 'next/navigation'
+import Link from 'next/link'
 
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'

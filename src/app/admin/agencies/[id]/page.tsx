@@ -1,18 +1,13 @@
 'use client'
 
-import { useState, useEffect } from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { Star, User, Users, Phone, Mail, MapPin, Clock, Calendar, CheckCircle, AlertCircle, Settings, Activity, TrendingUp, ArrowLeft, Ban, Globe, Building, FileText, CreditCard, Check, Check, Star, Calendar, Settings } from 'lucide-react'
-import { useParams, useRouter } from 'next/navigation'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
-import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { Ban, Star, Calendar, Clock, MapPin, Users, CheckCircle, AlertCircle, Phone, Mail, Settings, ArrowLeft, Edit, CreditCard, Globe, FileText, Info, Activity, TrendingUp, Building, User, MessageSquare, Image } from 'lucide-react'
+import { Star, User, Users, Phone, Mail, MapPin, Clock, Calendar, CheckCircle, AlertCircle, Settings, Activity, TrendingUp, ArrowLeft, Ban, Globe, Building, FileText, CreditCard, Check, Edit, Info, MessageSquare, Image } from 'lucide-react'
+import { useState, useEffect } from 'react'
+import { useParams, useRouter } from 'next/navigation'
 
 // Mock data for agency details
 const agencyDetails = {

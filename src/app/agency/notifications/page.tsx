@@ -1,13 +1,10 @@
 "use client"
 
 
-import { Card, CardContent } from '@/components/ui/card'
-import { Card, CardContent } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { CheckCircle, AlertCircle, Settings, Bell, MoreVertical, Check, Check, Settings, Bell } from 'lucide-react'
-import { Button } from '@/components/ui/button'
-import { Settings, Bell, AlertCircle, CheckCircle, MoreVertical } from 'lucide-react'
 
+import { Card, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { CheckCircle, AlertCircle, Settings, Bell, MoreVertical, Check } from 'lucide-react'
 import AgencyNavigation from '@/components/AgencyNavigation'
 
 export default function AgencyNotificationsPage() {

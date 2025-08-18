@@ -1,12 +1,9 @@
 "use client"
 
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Star, Eye, User, Users, MapPin, Clock, Calendar, MessageCircle, Download, Award, Activity, TrendingUp, ArrowUp, ArrowDown, Target, BarChart3, PieChart, Minus } from 'lucide-react'
 import { useState } from 'react'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Star, Eye, User, Users, MapPin, Clock, Calendar, MessageCircle, Download, Award, Activity, TrendingUp, ArrowUp, ArrowDown, Target, BarChart3, PieChart, Minus, Star, Calendar, MessageCircle } from 'lucide-react'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Download, Eye, Star, Calendar, Clock, MapPin, Users, MessageCircle, ArrowUp, ArrowDown, Activity, BarChart3, PieChart, TrendingUp, Award, Target, User, Minus } from 'lucide-react'
 import AgencyNavigation from '@/components/AgencyNavigation'
 
 interface AnalyticsData {

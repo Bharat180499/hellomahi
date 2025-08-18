@@ -1,13 +1,11 @@
 "use client"
 
-import Link from 'next/link'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Plus, Search, User, Phone, Mail, Download, ArrowRight, ChevronUp, ChevronDown, Send, HelpCircle } from 'lucide-react'
+import { Plus, Search, User, Phone, Mail, Download, ArrowRight, ChevronUp, ChevronDown, Send, HelpCircle, Star, Calendar, Shield, MessageCircle, CreditCard } from 'lucide-react'
+import Link from 'next/link'
 
-import { CardHeader, CardTitle } from '@/components/ui/card'
 
-import { HelpCircle, ChevronDown, ChevronUp, Download, Search, Star, Calendar, Shield, MessageCircle, Plus, ArrowRight, CreditCard } from 'lucide-react'
 import UserNavigation from '@/components/UserNavigation'
 
 interface FAQItem {

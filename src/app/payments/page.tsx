@@ -1,16 +1,12 @@
 "use client"
 
 
+
 import { Card, CardContent } from '@/components/ui/card'
-import { Card, CardContent } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Badge } from '@/components/ui/badge'
-import { Plus, Search, Filter, X, Clock, DollarSign, CheckCircle, XCircle, AlertCircle, Download, CreditCard, History, Check, Check, DollarSign } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Tabs } from '@/components/ui/tabs'
-
-import { History, Wallet, Download, Search, Filter, Clock, DollarSign, CheckCircle, XCircle, AlertCircle, Plus, X, Edit, CreditCard } from 'lucide-react'
+import { Plus, Search, Filter, X, Clock, DollarSign, CheckCircle, XCircle, AlertCircle, Download, CreditCard, History, Check, Wallet, Edit } from 'lucide-react'
 import type { PaymentMethod, PaymentTransaction } from '@/types/payments'
 
 import PaymentMethodCard from '@/components/payments/PaymentMethodCard'

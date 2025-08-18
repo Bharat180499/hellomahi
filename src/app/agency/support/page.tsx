@@ -2,11 +2,8 @@
 
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Plus, Search, Star, Phone, MessageCircle, Video, Send, FileText, HelpCircle, Star, MessageCircle } from 'lucide-react'
-import { Button } from '@/components/ui/button'
-import { HelpCircle, Send, Search, Star, Phone, Mail, MessageCircle, Settings, Plus, Video, FileText, Download, Tabs } from 'lucide-react'
+import { Plus, Search, Star, Phone, MessageCircle, Video, Send, FileText, HelpCircle, Mail, Settings, Download, Tabs } from 'lucide-react'
 import AgencyNavigation from '@/components/AgencyNavigation'
 
 export default function AgencySupportPage() {

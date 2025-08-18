@@ -1,14 +1,12 @@
 "use client"
 
-import Link from 'next/link'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Eye, Trash2, X, User, Mail, Calendar, Settings, Bell, Sun, Moon, Camera, Download, Shield, Save, Globe, Smartphone, Key, LogOut, Smartphone, Calendar, Shield, Settings, Trash2, Bell } from 'lucide-react'
+import { Eye, Trash2, X, User, Mail, Calendar, Settings, Bell, Sun, Moon, Camera, Download, Shield, Save, Globe, Smartphone, Key, LogOut, EyeOff } from 'lucide-react'
+import Link from 'next/link'
 
 import Image from 'next/image'
-import { CardHeader, CardTitle } from '@/components/ui/card'
 
-import { Key, Smartphone, Download, LogOut, Eye, EyeOff, Calendar, Shield, Settings, Bell, Moon, Trash2, Camera, Globe, Save } from 'lucide-react'
 import UserNavigation from '@/components/UserNavigation'
 
 interface UserProfile {

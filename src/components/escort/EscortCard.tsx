@@ -1,14 +1,13 @@
 "use client"
 
-import Image from 'next/image'
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import { Star, Heart, Eye, MapPin, CheckCircle, MessageCircle, Check, Check, Star, MessageCircle } from 'lucide-react'
+import { Star, Heart, Eye, MapPin, CheckCircle, MessageCircle, Check } from 'lucide-react'
+import Image from 'next/image'
 
 import Link from 'next/link'
 
-import { CheckCircle, Star, Heart, Eye, MessageCircle } from 'lucide-react'
 
 import type { Escort } from '@/types/escort'
 

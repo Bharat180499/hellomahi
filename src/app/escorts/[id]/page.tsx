@@ -1,20 +1,15 @@
 "use client"
 
 
-import { useParams } from 'next/navigation'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { Star, Heart, Phone, Mail, MapPin, Clock, Calendar, CheckCircle, MessageCircle, Play, Shield, ArrowLeft, Share2, Check, Check, Star, Calendar, Shield, MessageCircle } from 'lucide-react'
+import { Star, Heart, Phone, Mail, MapPin, Clock, Calendar, CheckCircle, MessageCircle, Play, Shield, ArrowLeft, Share2, Check, Download, Search, Eye, Sun, Video, Info } from 'lucide-react'
+import { useParams } from 'next/navigation'
 import Image from 'next/image'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Badge } from '@/components/ui/badge'
-import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
 
 
-import { Download, Search, Eye, Star, Heart, Calendar, Clock, MapPin, Shield, CheckCircle, Phone, Mail, MessageCircle, Sun, ArrowLeft, Play, Video, Info, Share2 } from 'lucide-react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 

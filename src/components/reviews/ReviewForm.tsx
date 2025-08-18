@@ -1,21 +1,16 @@
 "use client"
 
-import { CardHeader, CardTitle } from '@/components/ui/card'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+
+
+
+import { CardHeader, CardTitle, Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Label } from '@/components/ui/label'
 import { Textarea } from '@/components/ui/textarea'
-import { Star, X, MapPin, Clock, Calendar, DollarSign, CheckCircle, Upload, Check, ImageIcon, Check, Star, Calendar, DollarSign } from 'lucide-react'
-
-import { Textarea } from '@/components/ui/textarea'
-import { Label } from '@/components/ui/label'
-
 import { Switch } from '@/components/ui/switch'
-import { AvatarImage } from '@/components/ui/avatar'
-import { Star, Calendar, DollarSign, Upload, ImageIcon, CheckCircle } from 'lucide-react'
-
+import { Star, X, MapPin, Clock, Calendar, DollarSign, CheckCircle, Upload, Check, ImageIcon } from 'lucide-react'
 import type { ReviewRequest } from '@/types/reviews'
 
 interface ReviewFormProps {

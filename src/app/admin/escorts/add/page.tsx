@@ -1,17 +1,13 @@
 "use client"
 
-import { useState } from 'react'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { Eye, X, Phone, Mail, Calendar, DollarSign, Camera, Crown, ArrowLeft, Save, FileText, Calendar, DollarSign, Crown } from 'lucide-react'
-import { useRouter } from 'next/navigation'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Textarea } from '@/components/ui/textarea'
-import { ArrowLeft, X, Save, User, Mail, Phone, MapPin, Calendar, FileText, Shield, Users, Globe, Crown, EyeOff, Eye, DollarSign, Camera, Upload, CheckCircle } from 'lucide-react'
+import { Eye, X, Phone, Mail, Calendar, DollarSign, Camera, Crown, ArrowLeft, Save, FileText, User, MapPin, Shield, Users, Globe, EyeOff, Upload, CheckCircle } from 'lucide-react'
+import { useState } from 'react'
+import { useRouter } from 'next/navigation'
 
 
 export default function AddEscortPage() {

@@ -1,13 +1,10 @@
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Star, Heart, User, Users, Phone, MapPin, Clock, Calendar, MessageCircle, Video, Crown } from 'lucide-react'
 import { notFound } from 'next/navigation'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Star, Heart, User, Users, Phone, MapPin, Clock, Calendar, MessageCircle, Video, Crown, Star, Calendar, Crown, MessageCircle } from 'lucide-react'
 import Image from 'next/image'
-import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import VideoVerificationBadge from '@/components/VideoVerificationBadge'
 import { formatPrice, formatDate } from '@/lib/utils'
-import { Crown, Heart, MapPin, Star, Phone, MessageCircle, Clock, Calendar, Users } from 'lucide-react'
 
 import type { Escort } from '@/types'
 

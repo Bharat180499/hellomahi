@@ -1,16 +1,12 @@
 "use client"
 
 
-import Link from 'next/link'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Badge } from '@/components/ui/badge'
-import { X, User, Users, Calendar, CheckCircle, AlertCircle, Camera, Shield, Crown, ArrowLeft, Check, ImageIcon, Check, Calendar, Shield, Crown } from 'lucide-react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Input } from '@/components/ui/input'
-import { ArrowLeft, Users, Crown, Calendar, Shield, AlertCircle, Camera, X, CheckCircle, ImageIcon } from 'lucide-react'
+import { X, User, Users, Calendar, CheckCircle, AlertCircle, Camera, Shield, Crown, ArrowLeft, Check, ImageIcon } from 'lucide-react'
+import Link from 'next/link'
 
 
 import AgencyNavigation from '@/components/AgencyNavigation'

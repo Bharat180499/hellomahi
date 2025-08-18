@@ -1,12 +1,11 @@
 "use client"
 
-import Link from 'next/link'
 import { Button } from '@/components/ui/button'
-import { X, User, MessageCircle, Bell, Sun, Moon, MessageCircle, Bell } from 'lucide-react'
+import { X, User, MessageCircle, Bell, Sun, Moon, Menu, HelpCircle, Star, Heart, Calendar, DollarSign, Settings, BarChart3 } from 'lucide-react'
+import Link from 'next/link'
 
 import { usePathname } from 'next/navigation'
 
-import { Menu, HelpCircle, Star, Heart, Calendar, DollarSign, MessageCircle, Settings, Bell, Moon, BarChart3 } from 'lucide-react'
 
 export default function UserNavigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)

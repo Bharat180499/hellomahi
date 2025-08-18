@@ -1,17 +1,12 @@
 'use client'
 
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Badge } from '@/components/ui/badge'
+import { Plus, Search, Filter, Eye, User, Clock, Calendar, CheckCircle, AlertCircle, MessageCircle, Download, ChevronLeft, ChevronRight, Reply, Archive, Check } from 'lucide-react'
 import { useState } from 'react'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { Badge } from '@/components/ui/badge'
-import { Plus, Search, Filter, Eye, User, Clock, Calendar, CheckCircle, AlertCircle, MessageCircle, Download, ChevronLeft, ChevronRight, Reply, Archive, Check, Check, Calendar, MessageCircle, Archive } from 'lucide-react'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Badge } from '@/components/ui/badge'
-import { Input } from '@/components/ui/input'
 import { getStatusColor, getPriorityColor } from '@/lib/admin-utils'
-import { ChevronLeft, ChevronRight, Download, Search, Filter, Eye, Calendar, Clock, CheckCircle, AlertCircle, MessageCircle, Plus, Archive, Reply, User } from 'lucide-react'
 
 export default function AdminSupportPage() {
   const [searchQuery, setSearchQuery] = useState('')

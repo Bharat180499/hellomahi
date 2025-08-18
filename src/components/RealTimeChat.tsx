@@ -1,13 +1,11 @@
 "use client"
 
-import { useRef, useState } from 'react'
 import { Card, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Search, Phone, Clock, Video, Shield, Crown, MoreVertical, Send, Paperclip, Smile, VideoCall, Check, CheckCheck, Check, Shield, Crown } from 'lucide-react'
+import { Search, Phone, Clock, Video, Shield, Crown, MoreVertical, Send, Paperclip, Smile, VideoCall, Check, CheckCheck } from 'lucide-react'
+import { useRef, useState } from 'react'
 
-import { CardHeader, CardTitle } from '@/components/ui/card'
 
-import { Check, CheckCheck, Search, Shield, Crown, MoreVertical } from 'lucide-react'
 import Image from 'next/image'
 
 interface Message {

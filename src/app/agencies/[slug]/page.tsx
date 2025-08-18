@@ -1,18 +1,13 @@
 "use client"
 
-import { useState, useEffect } from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { Star, Heart, User, Users, Phone, Mail, MapPin, Clock, Calendar, CheckCircle, MessageCircle, Shield, Award, TrendingUp, ArrowLeft, Globe, Share2, Check, Check, Star, Calendar, Shield, MessageCircle } from 'lucide-react'
+import { Star, Heart, User, Users, Phone, Mail, MapPin, Clock, Calendar, CheckCircle, MessageCircle, Shield, Award, TrendingUp, ArrowLeft, Globe, Share2, Check } from 'lucide-react'
+import { useState, useEffect } from 'react'
 import { useParams } from 'next/navigation'
 import Image from 'next/image'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Badge } from '@/components/ui/badge'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { ArrowLeft, CheckCircle, Award, Users, Star, Phone, Mail, MapPin, Globe, Clock, Shield, Heart, Share2, MessageCircle, Calendar, TrendingUp } from 'lucide-react'
 
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'

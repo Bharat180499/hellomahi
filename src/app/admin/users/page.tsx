@@ -1,17 +1,13 @@
 "use client"
 
-import { useState } from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
-import { Plus, Search, Filter, Eye, Edit, Trash2, X, Phone, Mail, MapPin, Clock, Calendar, DollarSign, CheckCircle, XCircle, AlertCircle, Download, ChevronLeft, ChevronRight, Ban, Check, Check, Calendar, DollarSign, Trash2 } from 'lucide-react'
+import { Plus, Search, Filter, Eye, Edit, Trash2, X, Phone, Mail, MapPin, Clock, Calendar, DollarSign, CheckCircle, XCircle, AlertCircle, Download, ChevronLeft, ChevronRight, Ban, Check, Users, Activity, User, Image as LucideImage } from 'lucide-react'
+import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Image from 'next/image'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
 import ThemeToggle from '@/components/ThemeToggle'
-import { Ban, Download, ChevronLeft, ChevronRight, Search, Filter, Eye, Calendar, Clock, MapPin, DollarSign, Users, CheckCircle, XCircle, AlertCircle, Phone, Mail, Plus, X, Edit, Trash2, Activity, User, Image as LucideImage } from 'lucide-react'
 
 export default function AdminUsersPage() {
   const router = useRouter()

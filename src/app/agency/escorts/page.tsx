@@ -1,14 +1,11 @@
 "use client"
 
 
+import { Card, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Plus, Search, Star, Eye, Edit, X, User, Users, MapPin, Clock, CheckCircle, XCircle, MessageCircle, Shield, Crown, MoreVertical, Check, ToggleLeft, ToggleRight, Filter } from 'lucide-react'
 import Link from 'next/link'
-import { Card, CardContent } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Plus, Search, Star, Eye, Edit, X, User, Users, MapPin, Clock, CheckCircle, XCircle, MessageCircle, Shield, Crown, MoreVertical, Check, Check, Star, Shield, Crown, MessageCircle } from 'lucide-react'
 import Image from 'next/image'
-import { Card, CardContent } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { ToggleLeft, ToggleRight, Search, Filter, Eye, Star, Clock, MapPin, Users, Shield, Crown, CheckCircle, XCircle, MessageCircle, Plus, X, MoreVertical, Edit, User } from 'lucide-react'
 import AgencyNavigation from '@/components/AgencyNavigation'
 
 interface Escort {

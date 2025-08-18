@@ -1,16 +1,12 @@
 'use client'
 
-import { useState } from 'react'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Badge } from '@/components/ui/badge'
-import { Plus, Filter, Eye, X, Clock, DollarSign, CheckCircle, XCircle, AlertCircle, Download, Crown, Activity, ChevronLeft, ChevronRight, FileText, BarChart3, PieChart, Check, Check, DollarSign, Crown } from 'lucide-react'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Plus, Filter, Eye, X, Clock, DollarSign, CheckCircle, XCircle, AlertCircle, Download, Crown, Activity, ChevronLeft, ChevronRight, FileText, BarChart3, PieChart, Check, Users, User } from 'lucide-react'
+import { useState } from 'react'
 
 
-import { Download, ChevronLeft, ChevronRight, Filter, Eye, Clock, DollarSign, Users, Crown, CheckCircle, XCircle, AlertCircle, Plus, X, FileText, Activity, BarChart3, PieChart, User } from 'lucide-react'
 
 export default function AdminReportsPage() {
   const [selectedReport, setSelectedReport] = useState('all')

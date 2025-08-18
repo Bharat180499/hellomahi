@@ -1,9 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Heart, Eye, X, Phone, CheckCircle, XCircle, MessageCircle, Info, Shield, Check, AlertTriangle, Check, Shield, MessageCircle } from 'lucide-react'
-import { Button } from '@/components/ui/button'
-import { AlertTriangle, Phone, Shield, CheckCircle, XCircle, Heart, MessageCircle, Eye, Info } from 'lucide-react'
+import { Heart, Eye, X, Phone, CheckCircle, XCircle, MessageCircle, Info, Shield, Check, AlertTriangle } from 'lucide-react'
 
 
 export default function SafetyPage() {

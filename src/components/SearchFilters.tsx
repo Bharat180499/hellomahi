@@ -1,13 +1,10 @@
 "use client"
 
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Filter, Star, X, MapPin, DollarSign, Shield, Crown, ArrowRight, Lock } from 'lucide-react'
 import { useState } from 'react'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Filter, Star, X, MapPin, DollarSign, Shield, Crown, ArrowRight, Lock, Star, DollarSign, Shield, Crown } from 'lucide-react'
 import Link from 'next/link'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Filter, MapPin, DollarSign, Star, Shield, Crown, Lock, ArrowRight, X } from 'lucide-react'
 
 
 export default function SearchFilters() {

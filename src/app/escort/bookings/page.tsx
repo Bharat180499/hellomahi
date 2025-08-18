@@ -1,16 +1,13 @@
 "use client"
 
-import { useState } from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { Filter, Star, Eye, X, User, Phone, Mail, MapPin, Clock, Calendar, CheckCircle, XCircle, MessageCircle, MoreVertical, Check, Check, Star, Calendar, MessageCircle } from 'lucide-react'
+import { Filter, Star, Eye, X, User, Phone, Mail, MapPin, Clock, Calendar, CheckCircle, XCircle, MessageCircle, MoreVertical, Check, AlertCircle } from 'lucide-react'
+import { useState } from 'react'
 import Link from 'next/link'
-import { CardHeader, CardTitle } from '@/components/ui/card'
 
-import { TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { CheckCircle, AlertCircle, XCircle, Calendar, MoreVertical, Star, Eye, MessageCircle } from 'lucide-react'
 
 export default function EscortBookingsPage() {
   

@@ -1,16 +1,12 @@
 'use client'
 
-import { useState } from 'react'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { Save, RefreshCw } from 'lucide-react'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { Save, RefreshCw, Database, DollarSign, Shield, Phone, Mail, Settings, Bell, Globe, Info, User } from 'lucide-react'
+import { useState } from 'react'
 import ThemeToggle from '@/components/ThemeToggle'
-import { Database, RefreshCw, DollarSign, Shield, Phone, Mail, Settings, Bell, Globe, Info, User, Save } from 'lucide-react'
 
 export default function AdminSettingsPage() {
   const [activeTab, setActiveTab] = useState('general')

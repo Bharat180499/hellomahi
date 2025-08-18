@@ -1,16 +1,12 @@
 "use client"
 
 
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+
+
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import { Plus, Search, Star, Heart, Eye, Edit, Trash2, MapPin, DollarSign, MessageCircle, Upload, Download, Shield, Crown, Star, DollarSign, Shield, Crown, MessageCircle, Trash2 } from 'lucide-react'
-import { Button } from '@/components/ui/button'
-import { Badge } from '@/components/ui/badge'
-
-
-import { List, Grid, Download, Search, Filter, Eye, Star, Heart, MapPin, DollarSign, Shield, Crown, MessageCircle, Plus, Edit, Trash2, Upload } from 'lucide-react'
+import { Plus, Search, Star, Heart, Eye, Edit, Trash2, MapPin, DollarSign, MessageCircle, Upload, Download, Shield, Crown, List, Grid, Filter } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import type { Favorite, FavoriteList, FavoriteStats } from '@/types/favorites'

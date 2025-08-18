@@ -1,5 +1,5 @@
-import { apiClient } from './client';
 import { Video } from 'lucide-react'
+import { apiClient } from './client';
 import type { Escort, EscortSearchParams, EscortSearchResponse, CreateEscortData, UpdateEscortData, EscortStats, Photo } from '@/types/escort';
 
 // Escort API functions

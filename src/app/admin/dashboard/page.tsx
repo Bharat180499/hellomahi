@@ -1,16 +1,13 @@
 "use client"
 
-import { useState } from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { User, Users, MapPin, Clock, Calendar, DollarSign, AlertCircle, Settings, Shield, Crown, Activity, TrendingUp, ArrowRight, Building, FileText, HelpCircle, BarChart3, Calendar, DollarSign, Shield, Crown, Settings } from 'lucide-react'
+import { User, Users, MapPin, Clock, Calendar, DollarSign, AlertCircle, Settings, Shield, Crown, Activity, TrendingUp, ArrowRight, Building, FileText, HelpCircle, BarChart3, Image as LucideImage } from 'lucide-react'
+import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
 import ThemeToggle from '@/components/ThemeToggle'
 import { getVerificationStatusColor, getTypeColor, getIconColor } from '@/lib/admin-utils'
-import { HelpCircle, Calendar, Clock, MapPin, DollarSign, Users, Shield, Crown, AlertCircle, Settings, ArrowRight, FileText, Activity, BarChart3, TrendingUp, Building, User, Image as LucideImage } from 'lucide-react'
 
 export default function AdminDashboardPage() {
   const [selectedPeriod, setSelectedPeriod] = useState<'7d' | '30d' | '90d'>('30d')

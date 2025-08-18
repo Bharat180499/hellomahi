@@ -1,15 +1,12 @@
 "use client"
 
-import { CardHeader, CardTitle } from '@/components/ui/card'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+
+
+import { CardHeader, CardTitle, Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
-import { Eye, CheckCircle, Shield, Ban, CreditCard, Wallet, Smartphone, Lock, Check, Check, Smartphone, Shield } from 'lucide-react'
-
-import { Label } from '@/components/ui/label'
-
-import { Banknote, Smartphone, Wallet, Eye, EyeOff, Shield, CheckCircle, CreditCard, Lock } from 'lucide-react'
+import { Eye, CheckCircle, Shield, Ban, CreditCard, Wallet, Smartphone, Lock, Check, Banknote, EyeOff } from 'lucide-react'
 import type { PaymentMethod, PaymentRequest } from '@/types/payments'
 
 interface PaymentFormProps {

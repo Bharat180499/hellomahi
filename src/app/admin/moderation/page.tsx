@@ -1,17 +1,13 @@
 "use client"
 
-import { useState } from 'react'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { Search, Filter, Eye, X, MapPin, Clock, CheckCircle, XCircle, Download, Shield, ChevronLeft, ChevronRight, FileText, Check, Flag, Check, Shield } from 'lucide-react'
-import Link from 'next/link'
-import Image from 'next/image'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { Flag, Download, ChevronLeft, ChevronRight, Search, Filter, Eye, Star, Clock, MapPin, Shield, Crown, CheckCircle, XCircle, Settings, X, Camera, FileText, Building, User, MessageSquare, Image as LucideImage } from 'lucide-react'
+import { Search, Filter, Eye, X, MapPin, Clock, CheckCircle, XCircle, Download, Shield, ChevronLeft, ChevronRight, FileText, Check, Flag, Star, Crown, Settings, Camera, Building, User, MessageSquare, Image as LucideImage } from 'lucide-react'
+import { useState } from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
 
 export default function AdminModerationPage() {
   const [activeTab, setActiveTab] = useState<'verification' | 'content' | 'reports'>('verification')

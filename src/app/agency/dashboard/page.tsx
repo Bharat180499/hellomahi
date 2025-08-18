@@ -1,15 +1,12 @@
 "use client"
 
-import { useState } from 'react'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Plus, Star, User, Users, Calendar, TrendingUp, ArrowRight, BarChart3, Star, Calendar } from 'lucide-react'
-import Link from 'next/link'
-import Image from 'next/image'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import { Calendar, Clock, MapPin, DollarSign, Users, CheckCircle, AlertCircle, TrendingUp, Star, Activity, BarChart3, ArrowRight, Plus } from 'lucide-react'
+import { Plus, Star, User, Users, Calendar, TrendingUp, ArrowRight, BarChart3, Clock, MapPin, DollarSign, CheckCircle, AlertCircle, Activity } from 'lucide-react'
+import { useState } from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
 import AgencyNavigation from '@/components/AgencyNavigation'
 
 export default function AgencyDashboardPage() {

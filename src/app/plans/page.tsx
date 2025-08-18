@@ -1,17 +1,13 @@
 "use client"
 
 
-import { useRouter, useSearchParams } from 'next/navigation'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
-import { Star, User, ArrowRight, HelpCircle, Gift, Check, Check, Star } from 'lucide-react'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import { Check, Zap, Gift, HelpCircle, Search, Star, Heart, Users, Shield, Crown, MessageCircle, X, ArrowRight, Camera, Upload, Video, TrendingUp, Building, User } from 'lucide-react'
+import { Star, User, ArrowRight, HelpCircle, Gift, Check, Zap, Search, Heart, Users, Shield, Crown, MessageCircle, X, Camera, Upload, Video, TrendingUp, Building } from 'lucide-react'
+import { useRouter, useSearchParams } from 'next/navigation'
 import type { Plan, UserType } from '@/types'
-import { Input } from '@/components/ui/input';
 
 // Mock plans data for different user types
 const plansByUserType: Record<UserType, Plan[]> = {

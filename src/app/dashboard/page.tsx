@@ -1,12 +1,10 @@
 "use client"
 
-import { CardHeader, CardTitle } from '@/components/ui/card'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+
+
+import { CardHeader, CardTitle, Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Edit, Calendar, DollarSign, Settings, Bell, Camera, Upload, Video, Shield, Crown, Calendar, DollarSign, Shield, Crown, Settings, Bell } from 'lucide-react'
-
-import { Camera, Shield, Crown, DollarSign, Settings, Bell, Calendar, Upload } from 'lucide-react'
-
+import { Edit, Calendar, DollarSign, Settings, Bell, Camera, Upload, Video, Shield, Crown } from 'lucide-react'
 import VideoVerificationBadge from '@/components/VideoVerificationBadge'
 import { formatDate } from '@/lib/utils'
 

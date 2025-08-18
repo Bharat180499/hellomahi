@@ -1,17 +1,14 @@
-"use client"
-
-import { CardHeader, CardTitle } from '@/components/ui/card'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { CardHeader, CardTitle, Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { Eye, Edit, Trash2, X, User, Calendar, DollarSign, Camera, Download, Save, CreditCard, Lock, LogOut, Calendar, DollarSign, Trash2 } from 'lucide-react'
-
-import { TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
-
 import { Switch } from '@/components/ui/switch'
+import { Eye, Edit, Trash2, X, User, Calendar, DollarSign, Camera, Download, Save, CreditCard, Lock, LogOut, EyeOff, Settings } from 'lucide-react'
+"use client"
 
-import { LogOut, Download, Eye, EyeOff, Calendar, DollarSign, Settings, Trash2, Camera, CreditCard, Lock, Save } from 'lucide-react'
+
+
+
 
 export default function EscortSettingsPage() {
 

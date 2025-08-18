@@ -1,15 +1,13 @@
 "use client"
 
-import Link from 'next/link'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Search, X, User, Clock, CheckCircle, XCircle, AlertCircle, MessageCircle, ArrowLeft, MoreVertical, Send, Paperclip, Smile, Ban, Check, Check, MessageCircle } from 'lucide-react'
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger,  } from '@/components/ui/dropdown-menu'
+import { Search, X, User, Clock, CheckCircle, XCircle, AlertCircle, MessageCircle, ArrowLeft, MoreVertical, Send, Paperclip, Smile, Ban, Check } from 'lucide-react'
+import Link from 'next/link'
 
 import Image from 'next/image'
-import { CardHeader, CardTitle } from '@/components/ui/card'
 
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger,  } from '@/components/ui/dropdown-menu'
-import { Ban, Search, CheckCircle, XCircle, AlertCircle, MessageCircle, ArrowLeft, MoreVertical } from 'lucide-react'
 import UserNavigation from '@/components/UserNavigation'
 
 interface Message {
