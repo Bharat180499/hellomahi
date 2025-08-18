@@ -1,8 +1,7 @@
 "use client"
 
 import { useRef, useState } from 'react'
-import { Button } from '@/components/ui/button'
-import { Phone, VideoCall, Paperclip, Video, File, Smile, Send } from 'lucide-react'
+
 import { CardHeader, CardTitle } from '@/components/ui/card'
 
 import { Check, CheckCheck, Search, Shield, Crown, MoreVertical } from 'lucide-react'

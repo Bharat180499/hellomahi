@@ -1,9 +1,7 @@
 "use client"
 
 import Link from 'next/link'
-import { Card, CardContent } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Clock } from 'lucide-react'
+
 import Image from 'next/image'
 import { CardHeader, CardTitle } from '@/components/ui/card'
 

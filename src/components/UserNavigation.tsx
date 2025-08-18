@@ -1,8 +1,7 @@
 "use client"
 
 import Link from 'next/link'
-import { Button } from '@/components/ui/button'
-import { User, Sun, X } from 'lucide-react'
+
 import { usePathname } from 'next/navigation'
 
 import { Menu, HelpCircle, Star, Heart, Calendar, DollarSign, MessageCircle, Settings, Bell, Moon, BarChart3 } from 'lucide-react'

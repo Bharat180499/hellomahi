@@ -1,10 +1,7 @@
 "use client"
 
 import { useRef, useState } from 'react'
-import { Card, CardContent } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { MapPin, Users, X } from 'lucide-react'
+
 import { Search, Star } from 'lucide-react'
 
 import { searchCities } from '@/lib/cityData'

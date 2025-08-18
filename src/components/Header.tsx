@@ -1,8 +1,6 @@
 "use client"
 
 import Link from 'next/link'
-import { Button } from '@/components/ui/button'
-import { Sun, User, X } from 'lucide-react'
 
 import { Menu, Shield, Crown, Moon } from 'lucide-react'
 

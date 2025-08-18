@@ -1,9 +1,6 @@
 "use client"
 
 import { CardHeader, CardTitle } from '@/components/ui/card'
-import { Card, CardContent } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Clock, Edit } from 'lucide-react'
 
 import { Wallet, Banknote, Download, Calendar, DollarSign, CheckCircle, Plus, ArrowRight, ArrowLeft, Trash2, CreditCard } from 'lucide-react'
 

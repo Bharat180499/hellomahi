@@ -1,9 +1,6 @@
 "use client"
 
 import { AvatarImage } from '@/components/ui/avatar'
-import { Button } from '@/components/ui/button'
-import { Avatar, AvatarFallback } from '@/components/ui/avatar'
-import { Clock, MapPin, Edit } from 'lucide-react'
 
 import { Check, CheckCheck, Calendar, MoreVertical, Trash2, Reply, Save } from 'lucide-react'
 import type { Message } from '@/types/messaging'

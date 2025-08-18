@@ -1,12 +1,8 @@
 "use client"
 
 import { CardHeader, CardTitle } from '@/components/ui/card'
-import { Card, CardContent } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Badge } from '@/components/ui/badge'
-import { Edit } from 'lucide-react'
 
-import { Download, Eye, Star, Calendar, DollarSign, CheckCircle, XCircle, AlertCircle, MessageCircle, MoreVertical, Clock, CalendarIcon, MapPin, Phone, Mail, Share2 } from 'lucide-react'
+import { Download, Eye, Star, Calendar, DollarSign, CheckCircle, XCircle, AlertCircle, MessageCircle, MoreVertical, CalendarIcon, Share2 } from 'lucide-react'
 import Image from 'next/image'
 import type { Booking } from '@/types/bookings'
 

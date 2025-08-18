@@ -1,8 +1,7 @@
 "use client"
 
 import { useState } from 'react'
-import { Card, CardContent } from '@/components/ui/card'
-import { Clock, Activity } from 'lucide-react'
+
 import Link from 'next/link'
 import Image from 'next/image'
 import { CardHeader, CardTitle } from '@/components/ui/card'

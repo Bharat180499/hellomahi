@@ -1,8 +1,6 @@
 "use client"
 
 import { CardHeader, CardTitle } from '@/components/ui/card'
-import { Card, CardContent } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
 
 import { ThumbsDown, Flag, Star, Calendar, CheckCircle, MessageCircle, MoreVertical, ThumbsUp } from 'lucide-react'
 import Image from 'next/image'

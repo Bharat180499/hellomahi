@@ -1,9 +1,7 @@
 "use client"
 
 import { useState } from 'react'
-import { Card, CardContent } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Clock } from 'lucide-react'
+
 import { CardHeader, CardTitle } from '@/components/ui/card'
 
 import { CheckCircle, XCircle, Shield, Upload, AlertCircle } from 'lucide-react'
