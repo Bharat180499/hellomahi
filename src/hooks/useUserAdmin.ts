@@ -1,7 +1,5 @@
-import { User } from 'lucide-react'
 "use client"
-
-
+import { User } from 'lucide-react'
 
 interface UserAdminData {
   id: string | number

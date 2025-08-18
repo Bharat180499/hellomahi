@@ -1,9 +1,7 @@
+"use client"
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Star, MapPin, Navigation } from 'lucide-react'
-"use client"
-
-
 
 interface Location {
   id: string

@@ -1,32 +1,9 @@
 'use client'
 
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Badge } from '@/components/ui/badge'
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { Separator } from '@/components/ui/separator'
-import { Star, User, Phone, Mail, MapPin, Clock, Calendar, CheckCircle, AlertCircle, Settings, Crown, Activity, ArrowLeft, Building, FileText, Check } from 'lucide-react'
+import { Activity, AlertCircle, ArrowLeft, Building, Calendar, Check, CheckCircle, Clock, Crown, FileText, Mail, MapPin, MessageSquare, Phone, Settings, Star, User } from 'lucide-react'
+
 import { useState, useEffect } from 'react'
 import { useParams, useRouter } from 'next/navigation'
-import { 
-  ArrowLeft, 
-  MessageSquare, 
-  Settings, 
-  FileText, 
-  Calendar, 
-  Clock, 
-  MapPin, 
-  User, 
-  Mail, 
-  Phone, 
-  Crown, 
-  Building, 
-  Activity, 
-  CheckCircle, 
-  Star, 
-  AlertCircle 
-} from 'lucide-react'
-
 
 // Mock data for booking details
 const bookingDetails = {
@@ -392,7 +369,6 @@ export default function BookingDetailPage() {
 
         {/* Sidebar */}
         <div className="space-y-6">
-
 
           {/* Meeting Details */}
           <Card>

@@ -1,9 +1,7 @@
+"use client"
 import { CardHeader, CardTitle, Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Star, User, Users, Phone, Clock, MessageCircle, Shield, Send } from 'lucide-react'
-"use client"
-
-
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({

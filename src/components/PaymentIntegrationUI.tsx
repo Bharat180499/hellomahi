@@ -1,9 +1,7 @@
+"use client"
 import { CardHeader, CardTitle, Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Plus, Edit, Trash2, Clock, Calendar, DollarSign, CheckCircle, Download, ArrowLeft, ArrowRight, Ban, CreditCard, Wallet, Check, Banknote } from 'lucide-react'
-"use client"
-
-
 
 interface PaymentMethod {
   id: string

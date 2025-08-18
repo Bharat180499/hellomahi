@@ -1,9 +1,7 @@
+"use client"
 import { CardHeader, CardTitle, Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Plus, Search, Phone, Mail, Download, ArrowRight, ChevronUp, ChevronDown, Send, HelpCircle, Calendar, Shield, CreditCard } from 'lucide-react'
-"use client"
-
-
 
 interface FAQItem {
   id: string
