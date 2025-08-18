@@ -1,6 +1,5 @@
 "use client"
 
-import { Tabs } from '@/components/ui/tabs'
 import * as React from "react"
 import * as TabsPrimitive from "@radix-ui/react-tabs"
 

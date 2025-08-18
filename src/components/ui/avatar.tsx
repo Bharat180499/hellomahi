@@ -1,6 +1,5 @@
 "use client"
 
-import { Avatar } from '@/components/ui/avatar'
 import * as React from "react"
 import * as AvatarPrimitive from "@radix-ui/react-avatar"
 

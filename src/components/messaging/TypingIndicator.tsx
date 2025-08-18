@@ -1,5 +1,6 @@
-import { Avatar, AvatarFallback } from '@/components/ui/avatar'
 "use client"
+
+import { Avatar, AvatarFallback } from '@/components/ui/avatar'
 
 interface TypingIndicatorProps {
   users: TypingStatus[]
