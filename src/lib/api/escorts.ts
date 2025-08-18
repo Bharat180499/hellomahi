@@ -1,15 +1,5 @@
 import { apiClient } from './client';
-import type {
-  Escort,
-  EscortSearchParams,
-  EscortSearchResponse,
-  CreateEscortData,
-  UpdateEscortData,
-  EscortStats,
-  Photo,
-  Video,
-  Document
-} from '@/types/escort';
+import type { Escort, EscortSearchParams, EscortSearchResponse, CreateEscortData, UpdateEscortData, EscortStats, Photo } from '@/types/escort';
 
 // Escort API functions
 export const escorts = {
@@ -112,8 +102,6 @@ export const escorts = {
     });
     return response.success;
   },
-
-
 
   // Get escort statistics
   async getStats(): Promise<EscortStats> {

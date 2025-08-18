@@ -1,18 +1,14 @@
 "use client"
 
+import { CardHeader, CardTitle } from '@/components/ui/card'
 
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
-import { Input } from '@/components/ui/input'
+import { TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
+
 import { Switch } from '@/components/ui/switch'
 
-import { LogOut, Download, Eye, EyeOff, Calendar, DollarSign, Phone, Settings, X, Edit, Trash2, Camera, CreditCard, Lock, Info, User, Save } from 'lucide-react'
+import { LogOut, Download, Eye, EyeOff, Calendar, DollarSign, Settings, Trash2, Camera, CreditCard, Lock, Save } from 'lucide-react'
 
 export default function EscortSettingsPage() {
-  
-  
-  
 
   const [billingData, setBillingData] = useState({
     plan: 'Premium',

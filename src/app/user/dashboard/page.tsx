@@ -1,12 +1,13 @@
 "use client"
 
-
 import { useState } from 'react'
+import { Card, CardContent } from '@/components/ui/card'
+import { Clock, Activity } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { CheckCircle, Clock, XCircle, AlertCircle, Plus, TrendingUp, Calendar, DollarSign, Star, Heart, ArrowRight, Activity, Search, MessageCircle, Settings } from 'lucide-react'
+import { CardHeader, CardTitle } from '@/components/ui/card'
+
+import { CheckCircle, XCircle, AlertCircle, Plus, TrendingUp, Calendar, DollarSign, Star, Heart, ArrowRight, Search, MessageCircle, Settings } from 'lucide-react'
 
 import UserNavigation from '@/components/UserNavigation'
 

@@ -1,10 +1,10 @@
 "use client"
 
 import Link from 'next/link'
-
 import { Button } from '@/components/ui/button'
-import { Card } from '@/components/ui/card'
-import { Menu, Shield, Crown, Sun, Moon, X, User } from 'lucide-react'
+import { Sun, User, X } from 'lucide-react'
+
+import { Menu, Shield, Crown, Moon } from 'lucide-react'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)

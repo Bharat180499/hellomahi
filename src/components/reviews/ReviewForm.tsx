@@ -1,15 +1,18 @@
 "use client"
 
-
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
+import { Avatar, AvatarFallback } from '@/components/ui/avatar'
+import { MapPin, Clock, X } from 'lucide-react'
+
 import { Textarea } from '@/components/ui/textarea'
 import { Label } from '@/components/ui/label'
 
 import { Switch } from '@/components/ui/switch'
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { Star, MapPin, Calendar, Clock, DollarSign, Upload, ImageIcon, X, CheckCircle } from 'lucide-react'
+import { AvatarImage } from '@/components/ui/avatar'
+import { Star, Calendar, DollarSign, Upload, ImageIcon, CheckCircle } from 'lucide-react'
 
 import type { ReviewRequest } from '@/types/reviews'
 

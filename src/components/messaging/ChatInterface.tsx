@@ -1,18 +1,11 @@
 "use client"
 
 import { useRef, useCallback, useState } from 'react'
-import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
+import { X } from 'lucide-react'
 
-import { Avatar, AvatarFallback } from '@/components/ui/avatar'
-import { Send, Paperclip, Smile, File, Search, Users, X, Edit, Video, Reply, User, VideoCall } from 'lucide-react'
-import type { 
-  Message, 
-  Conversation, 
-  MessageRequest,
-  TypingStatus 
-} from '@/types/messaging'
+import { Search, Reply } from 'lucide-react'
+import type { Message, Conversation, MessageRequest } from '@/types/messaging'
 import { messaging } from '@/lib/api/messaging'
 import MessageBubble from './MessageBubble'
 import MessageInput from './MessageInput'

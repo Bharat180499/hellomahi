@@ -1,10 +1,11 @@
 "use client"
 
-
-import { CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
+import { CardHeader, CardTitle } from '@/components/ui/card'
 import { Card, CardContent } from '@/components/ui/card'
-import { SlidersHorizontal, Search, Filter, Star, DollarSign, Shield, Crown, Sun, X, Award } from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { Filter, X } from 'lucide-react'
+
+import { SlidersHorizontal, Search, Star, DollarSign, Shield, Crown, Award } from 'lucide-react'
 
 interface SearchFilters {
   location: string

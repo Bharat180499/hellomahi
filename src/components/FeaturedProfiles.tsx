@@ -1,12 +1,13 @@
 "use client"
 
 import { useState } from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Badge } from '@/components/ui/badge'
-import { Shield, Crown, Heart, MapPin, Star, Eye, MessageCircle, Phone } from 'lucide-react'
+import { MapPin, Phone } from 'lucide-react'
+import Link from 'next/link'
+import Image from 'next/image'
+
+import { Shield, Crown, Heart, Star, Eye, MessageCircle } from 'lucide-react'
 
 import { formatPrice } from '@/lib/utils'
 import type { Escort } from '@/types'

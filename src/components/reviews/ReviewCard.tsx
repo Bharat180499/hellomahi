@@ -1,13 +1,15 @@
 "use client"
 
-
-import { Card, CardContent, CardHeader } from '@/components/ui/card'
+import { CardHeader } from '@/components/ui/card'
+import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { ThumbsDown, Flag, Star, Calendar, Clock, MapPin, DollarSign, CheckCircle, MessageCircle, MoreVertical, Edit, Trash2, Video, Reply, User, AlertTriangle, ClockIcon, ImageIcon, ThumbsUp, Image } from 'lucide-react'
-import type { Review, ReviewResponse } from '@/types/reviews'
+import { Avatar, AvatarFallback } from '@/components/ui/avatar'
+import { Video, MapPin, Clock, Edit } from 'lucide-react'
 
+import { AvatarImage } from '@/components/ui/avatar'
+import { ThumbsDown, Flag, Star, Calendar, DollarSign, CheckCircle, MessageCircle, MoreVertical, Trash2, Reply, AlertTriangle, ClockIcon, ImageIcon, ThumbsUp } from 'lucide-react'
+import type { Review } from '@/types/reviews'
 
 interface ReviewCardProps {
   review: Review

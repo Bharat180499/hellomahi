@@ -1,11 +1,12 @@
 "use client"
 
-
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
+import { Edit } from 'lucide-react'
 
-import { Download, Eye, Star, Calendar, Clock, MapPin, DollarSign, CheckCircle, XCircle, AlertCircle, Phone, Mail, MessageCircle, X, MoreVertical, Edit, Info, ClockIcon, CalendarIcon, MapPinIcon, PhoneIcon, MailIcon, Share2, ClockIcon2 } from 'lucide-react'
+import { Download, Eye, Star, Calendar, DollarSign, CheckCircle, XCircle, AlertCircle, MessageCircle, MoreVertical, Clock, CalendarIcon, MapPin, Phone, Mail, Share2 } from 'lucide-react'
 import Image from 'next/image'
 import type { Booking } from '@/types/bookings'
 
@@ -85,9 +86,9 @@ export default function BookingCard({
       case 'no-show':
         return <XCircle className="h-4 w-4" />
       case 'rescheduled':
-        return <ClockIcon className="h-4 w-4" />
+        return <Clock className="h-4 w-4" />
       default:
-        return <ClockIcon className="h-4 w-4" />
+        return <Clock className="h-4 w-4" />
     }
   }
 
@@ -307,7 +308,7 @@ export default function BookingCard({
             </div>
             
             <div className="flex items-center gap-2">
-              <MapPinIcon className="h-4 w-4 text-muted-foreground" />
+              <MapPin className="h-4 w-4 text-muted-foreground" />
               <div>
                 <p className="text-sm font-medium">{booking.location}</p>
                 <p className="text-xs text-muted-foreground">Location</p>
@@ -317,7 +318,7 @@ export default function BookingCard({
 
           <div className="space-y-3">
             <div className="flex items-center gap-2">
-              <ClockIcon2 className="h-4 w-4 text-muted-foreground" />
+              <Clock className="h-4 w-4 text-muted-foreground" />
               <div>
                 <p className="text-sm font-medium">{booking.duration} hour{booking.duration > 1 ? 's' : ''}</p>
                 <p className="text-xs text-muted-foreground">Duration</p>
@@ -340,19 +341,19 @@ export default function BookingCard({
             <div className="flex items-center gap-4">
               {userType === 'client' && booking.escortPhone && (
                 <Button variant="ghost" size="sm" className="h-8 px-2">
-                  <PhoneIcon className="h-3 w-3 mr-1" />
+                  <Phone className="h-3 w-3 mr-1" />
                   Call
                 </Button>
               )}
               {userType === 'escort' && booking.clientPhone && (
                 <Button variant="ghost" size="sm" className="h-8 px-2">
-                  <PhoneIcon className="h-3 w-3 mr-1" />
+                  <Phone className="h-3 w-3 mr-1" />
                   Call
                 </Button>
               )}
               
               <Button variant="ghost" size="sm" className="h-8 px-2">
-                <MailIcon className="h-3 w-3 mr-1" />
+                <Mail className="h-3 w-3 mr-1" />
                 Email
               </Button>
               

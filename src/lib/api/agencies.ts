@@ -1,16 +1,5 @@
 import { apiClient } from './client'
-import type {
-  Agency,
-  AgencySearchParams,
-  AgencyCreateData,
-  AgencyUpdateData,
-  AgencyAnalytics,
-  AgencyDashboardStats,
-  AgencyStaff,
-  AgencyEscort,
-  AgencyNotification,
-  AgencyReport
-} from '@/types/agency'
+import type { AgencySearchParams, AgencyCreateData, AgencyUpdateData, AgencyAnalytics, AgencyDashboardStats, AgencyStaff, AgencyEscort, AgencyNotification, AgencyReport } from '@/types/agency'
 
 export const agencies = {
   // Search and list agencies

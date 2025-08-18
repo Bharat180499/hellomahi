@@ -2,14 +2,10 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Badge } from '@/components/ui/badge'
-import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { CheckCircle, AlertCircle, XCircle, Clock, Filter, Calendar, User, MapPin, MoreVertical, Phone, Mail, Star, Eye, MessageCircle } from 'lucide-react'
+import { CardHeader, CardTitle } from '@/components/ui/card'
 
-
-
+import { TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { CheckCircle, AlertCircle, XCircle, Calendar, MoreVertical, Star, Eye, MessageCircle } from 'lucide-react'
 
 export default function EscortBookingsPage() {
   
@@ -197,8 +193,6 @@ export default function EscortBookingsPage() {
             </div>
           </CardContent>
         </Card>
-
-
 
         <Card>
           <CardContent className="p-6">

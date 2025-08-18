@@ -1,23 +1,5 @@
 import { apiClient } from './client'
-import type {
-  Message,
-  Conversation,
-  ChatRoom,
-  MessageRequest,
-  ConversationRequest,
-  MessageResponse,
-  ConversationResponse,
-  ConversationsListResponse,
-  TypingStatus,
-  ReadReceipt,
-  MessageSearchRequest,
-  MessageSearchResponse,
-  ChatNotification,
-  ChatStats,
-  MessageTemplate,
-  ChatFilters,
-  ChatSortOptions
-} from '@/types/messaging'
+import type { Message, Conversation, MessageRequest, ConversationRequest, MessageResponse, ConversationResponse, ConversationsListResponse, MessageSearchRequest, MessageSearchResponse, ChatNotification, ChatStats, MessageTemplate, ChatFilters, ChatSortOptions } from '@/types/messaging'
 
 // Conversations
 export const conversations = {
@@ -169,7 +151,6 @@ export const messages = {
 
     return apiClient.get(`/messages/search?${params}`)
   },
-
 
 }
 

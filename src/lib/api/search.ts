@@ -1,22 +1,5 @@
 import { apiClient } from './client'
-import type {
-  SearchRequest,
-  SearchResponse,
-  SearchSuggestion,
-  SearchHistory,
-  SearchAnalytics,
-  LocationSearch,
-  ServiceSearch,
-  SearchPreferences,
-  SearchNotification,
-  SearchAlert,
-  SearchRecommendation,
-  SearchFilter,
-  SearchCategory,
-  SearchLocation,
-  SearchTrend,
-  SearchInsight
-} from '@/types/search'
+import type { SearchRequest, SearchResponse, SearchSuggestion, SearchHistory, SearchAnalytics, LocationSearch, ServiceSearch, SearchPreferences, SearchNotification, SearchAlert, SearchRecommendation, SearchFilter, SearchCategory, SearchLocation, SearchTrend, SearchInsight } from '@/types/search'
 
 // Search Operations
 export const search = {

@@ -3,7 +3,9 @@
 import Link from 'next/link'
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Home, Search, MapPin, Users, Crown, ArrowLeft, User } from 'lucide-react'
+import { MapPin, Users } from 'lucide-react'
+
+import { Home, Search, Crown, ArrowLeft } from 'lucide-react'
 
 export default function NotFound() {
   return (

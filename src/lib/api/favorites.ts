@@ -1,25 +1,5 @@
 import { apiClient } from './client'
-import type {
-  Favorite,
-  FavoriteList,
-  FavoriteRequest,
-  FavoriteUpdate,
-  FavoriteStats,
-  FavoriteSearch,
-  FavoriteSearchResult,
-  FavoriteNotification,
-  FavoriteAlert,
-  FavoriteShare,
-  FavoriteAnalytics,
-  FavoriteTemplate,
-  FavoriteImport,
-  FavoriteExport,
-  FavoriteSync,
-  FavoriteBackup,
-  FavoriteRestore,
-  FavoritePrivacy,
-  FavoriteSettings
-} from '@/types/favorites'
+import type { Favorite, FavoriteList, FavoriteRequest, FavoriteUpdate, FavoriteStats, FavoriteSearch, FavoriteSearchResult, FavoriteNotification, FavoriteAlert, FavoriteShare, FavoriteAnalytics, FavoriteTemplate, FavoriteImport, FavoriteExport, FavoriteSync, FavoriteBackup, FavoriteRestore, FavoritePrivacy, FavoriteSettings } from '@/types/favorites'
 
 // Favorites Management
 export const favorites = {

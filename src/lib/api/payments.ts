@@ -1,22 +1,5 @@
 import { apiClient } from './client'
-import type {
-  PaymentMethod,
-  PaymentTransaction,
-  PaymentRequest,
-  PaymentResponse,
-  RefundRequest,
-  RefundResponse,
-  PaymentMethodRequest,
-  PaymentMethodResponse,
-  PaymentIntent,
-  PaymentStats,
-  WithdrawalRequest,
-  WithdrawalResponse,
-  Withdrawal,
-  PaymentSettings,
-  PaymentNotification,
-  PaymentAnalytics
-} from '@/types/payments'
+import type { PaymentMethod, PaymentTransaction, PaymentRequest, PaymentResponse, RefundRequest, RefundResponse, PaymentMethodRequest, PaymentMethodResponse, PaymentIntent, PaymentStats, WithdrawalRequest, WithdrawalResponse, Withdrawal, PaymentSettings, PaymentNotification, PaymentAnalytics } from '@/types/payments'
 
 // Payment Methods
 export const paymentMethods = {
@@ -133,8 +116,6 @@ export const paymentIntents = {
     return apiClient.post(`/payments/intents/${intentId}/cancel`)
   }
 }
-
-
 
 // Withdrawals
 export const withdrawals = {

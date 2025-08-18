@@ -105,8 +105,6 @@ export interface TopPerformingEscort {
   rating: number
 }
 
-
-
 export interface BookingsByLocation {
   location: string
   bookings: number

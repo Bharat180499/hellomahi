@@ -1,12 +1,10 @@
 "use client"
 
-
 import { useState } from 'react'
 import Link from 'next/link'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Plus, TrendingUp, Eye, Calendar, Star, ArrowRight, User, DollarSign, MessageCircle, Activity } from 'lucide-react'
+import { CardHeader, CardTitle } from '@/components/ui/card'
 
+import { Plus, TrendingUp, Eye, Calendar, Star, ArrowRight, DollarSign, MessageCircle, MoreVertical, Settings } from 'lucide-react'
 
 export default function EscortDashboardPage() {
   const [selectedPeriod, setSelectedPeriod] = useState<'7d' | '30d' | '90d'>('30d')
@@ -129,8 +127,6 @@ export default function EscortDashboardPage() {
             </div>
           </CardContent>
         </Card>
-
-
 
         <Card>
           <CardContent className="p-6">
@@ -255,8 +251,6 @@ export default function EscortDashboardPage() {
             </Button>
           </CardContent>
         </Card>
-
-
 
         <Card className="hover:shadow-md transition-shadow cursor-pointer">
           <CardContent className="p-6 text-center">

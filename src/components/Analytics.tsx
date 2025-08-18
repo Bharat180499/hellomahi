@@ -1,7 +1,5 @@
 "use client"
 
-
-
 interface AnalyticsProps {
   pageType: 'city' | 'escort' | 'agency' | 'home'
   pageData: {

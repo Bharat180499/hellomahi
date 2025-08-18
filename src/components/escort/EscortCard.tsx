@@ -1,16 +1,15 @@
 "use client"
 
-
 import Image from 'next/image'
-import Link from 'next/link'
 import { Card, CardContent } from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
-
 import { Button } from '@/components/ui/button'
-import { CheckCircle, Star, Heart, MapPin, Eye, MessageCircle } from 'lucide-react'
+import { Badge } from '@/components/ui/badge'
+import { MapPin } from 'lucide-react'
+import Link from 'next/link'
+
+import { CheckCircle, Star, Heart, Eye, MessageCircle } from 'lucide-react'
 
 import type { Escort } from '@/types/escort'
-
 
 interface EscortCardProps {
   escort: Escort

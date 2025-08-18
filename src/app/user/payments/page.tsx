@@ -1,11 +1,12 @@
 "use client"
 
-
 import Link from 'next/link'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Tabs } from '@/components/ui/tabs'
-import { Wallet, Download, Search, Filter, Calendar, Clock, DollarSign, Shield, CheckCircle, XCircle, AlertCircle, Phone, Plus, X, ArrowRight, MoreVertical, Edit, Trash2, CreditCard, Info, User } from 'lucide-react'
+import { Clock, Edit } from 'lucide-react'
+import { CardHeader, CardTitle } from '@/components/ui/card'
+
+import { Wallet, Download, Search, Calendar, DollarSign, Shield, CheckCircle, XCircle, AlertCircle, Plus, ArrowRight, MoreVertical, Trash2, CreditCard } from 'lucide-react'
 import UserNavigation from '@/components/UserNavigation'
 
 interface PaymentMethod {

@@ -1,11 +1,12 @@
 "use client"
 
-
 import Link from 'next/link'
-import Image from 'next/image'
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Download, RefreshCw, Search, Filter, Eye, Star, Heart, Calendar, DollarSign, MessageCircle, ArrowRight, MoreVertical, Activity, TrendingUp, User } from 'lucide-react'
+import { Activity } from 'lucide-react'
+import Image from 'next/image'
+
+import { Download, RefreshCw, Search, Eye, Star, Heart, Calendar, DollarSign, MessageCircle, ArrowRight, MoreVertical, TrendingUp } from 'lucide-react'
 import UserNavigation from '@/components/UserNavigation'
 
 interface HistoryItem {

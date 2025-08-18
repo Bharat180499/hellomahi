@@ -1,11 +1,14 @@
 "use client"
 
 import { useState } from 'react'
+import { Card, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Clock, MapPin, User } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Download, RefreshCw, CheckCircle, AlertCircle, XCircle, Calendar, Search, Star, Eye, User, MessageCircle, MoreVertical, Filter, Clock, MapPin, DollarSign, X, Info } from 'lucide-react'
+import { CardHeader, CardTitle } from '@/components/ui/card'
+
+import { Download, RefreshCw, CheckCircle, AlertCircle, XCircle, Calendar, Search, Star, Eye, MessageCircle, MoreVertical, DollarSign } from 'lucide-react'
 import UserNavigation from '@/components/UserNavigation'
 
 interface Booking {

@@ -1,7 +1,5 @@
 "use client"
 
-
-
 interface PerformanceOptimizerProps {
   children: React.ReactNode
   enableLazyLoading?: boolean

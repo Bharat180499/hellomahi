@@ -2,9 +2,10 @@
 
 import { useRef, useState } from 'react'
 import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
+import { X, Smile, Send } from 'lucide-react'
+
 import { Textarea } from '@/components/ui/textarea'
-import { Send, Smile, Mic, StopCircle, Star, Calendar, MapPin, X, Reply } from 'lucide-react'
+import { Mic, StopCircle, Star, Calendar, Reply } from 'lucide-react'
 import type { Message } from '@/types/messaging'
 
 interface MessageInputProps {
@@ -28,8 +29,6 @@ export default function MessageInput({
 
   const [isRecording, setIsRecording] = useState(false)
   const [showEmojiPicker, setShowEmojiPicker] = useState(false)
-
-  
 
   const textareaRef = useRef<HTMLTextAreaElement>(null)
 
@@ -70,10 +69,6 @@ export default function MessageInput({
     e.target.style.height = 'auto'
     e.target.style.height = Math.min(e.target.scrollHeight, 120) + 'px'
   }
-
-
-
-
 
   // Handle emoji selection
   const handleEmojiSelect = (emoji: string) => {
@@ -167,11 +162,8 @@ export default function MessageInput({
         </div>
       )}
 
-
-
       {/* Input area */}
       <div className="flex items-end gap-2">
-
 
         {/* Text input */}
         <div className="flex-1 relative">
@@ -222,8 +214,6 @@ export default function MessageInput({
           <Send className="h-4 w-4" />
         </Button>
       </div>
-
-
 
       {/* Emoji picker */}
       {showEmojiPicker && (

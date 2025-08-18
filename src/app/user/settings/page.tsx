@@ -1,12 +1,13 @@
 "use client"
 
-
 import Link from 'next/link'
-import Image from 'next/image'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Avatar } from '@/components/ui/avatar'
-import { Key, Smartphone, Download, LogOut, Eye, EyeOff, Calendar, Shield, Phone, Mail, Settings, Bell, Sun, Moon, X, Edit, Trash2, Camera, Globe, Info, User, Save } from 'lucide-react'
+import { User, X, Mail, Sun } from 'lucide-react'
+import Image from 'next/image'
+import { CardHeader, CardTitle } from '@/components/ui/card'
+
+import { Key, Smartphone, Download, LogOut, Eye, EyeOff, Calendar, Shield, Settings, Bell, Moon, Trash2, Camera, Globe, Save } from 'lucide-react'
 import UserNavigation from '@/components/UserNavigation'
 
 interface UserProfile {
@@ -32,8 +33,7 @@ interface NotificationSettings {
 
 export default function UserSettingsPage() {
   const [activeTab, setActiveTab] = useState<'profile' | 'security' | 'notifications' | 'preferences'>('profile')
-  
-  
+
   const [isDark, setIsDark] = useState(true)
 
   const [profile, setProfile] = useState<UserProfile>({
@@ -309,8 +309,6 @@ export default function UserSettingsPage() {
                         Update Password
                       </Button>
                     </div>
-
-
 
                     {/* Login Alerts */}
                     <div className="flex items-center justify-between p-4 border rounded-lg">

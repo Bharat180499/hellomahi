@@ -159,8 +159,6 @@ export interface PaymentStats {
   }>
 }
 
-
-
 export interface WithdrawalRequest {
   userId: string
   userType: 'escort' | 'agency'

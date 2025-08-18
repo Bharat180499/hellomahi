@@ -1,10 +1,11 @@
 "use client"
 
-
+import { AvatarImage } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button'
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { Avatar, AvatarFallback } from '@/components/ui/avatar'
+import { Clock, MapPin, Edit } from 'lucide-react'
 
-import { Check, CheckCheck, File, Calendar, Clock, MapPin, MoreVertical, Edit, Trash2, Reply, Info, Save, Image } from 'lucide-react'
+import { Check, CheckCheck, Calendar, MoreVertical, Trash2, Reply, Save } from 'lucide-react'
 import type { Message } from '@/types/messaging'
 
 interface MessageBubbleProps {
@@ -66,8 +67,6 @@ export default function MessageBubble({
             {message.content}
           </div>
         )
-
-
 
       case 'location':
         return (

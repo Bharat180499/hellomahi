@@ -1,20 +1,5 @@
 import { apiClient } from './client'
-import type {
-  Review,
-  Rating,
-  ReviewRequest,
-  ReviewResponseRequest,
-  ReviewSearchRequest,
-  ReviewSearchResponse,
-  ReviewStats,
-  ReviewReport,
-  ReviewReportRequest,
-  ReviewHelpfulVoteRequest,
-  EscortReviewSummary,
-  AgencyReviewSummary,
-  ReviewTemplate,
-  ReviewAnalytics
-} from '@/types/reviews'
+import type { Review, Rating, ReviewRequest, ReviewResponseRequest, ReviewSearchRequest, ReviewSearchResponse, ReviewStats, ReviewReport, ReviewReportRequest, ReviewHelpfulVoteRequest, EscortReviewSummary, AgencyReviewSummary, ReviewTemplate, ReviewAnalytics } from '@/types/reviews'
 
 // Reviews
 export const reviews = {

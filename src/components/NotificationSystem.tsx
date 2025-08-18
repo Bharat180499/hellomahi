@@ -1,10 +1,11 @@
 "use client"
 
-
-import { CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
+import { CardHeader, CardTitle } from '@/components/ui/card'
 import { Card, CardContent } from '@/components/ui/card'
-import { BellOff, Check, Smartphone, Filter, Star, Calendar, DollarSign, Shield, Crown, Mail, MessageCircle, Settings, Trash2, Play, Archive, Volume2, Bell, Image } from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { Mail } from 'lucide-react'
+
+import { BellOff, Check, Smartphone, Star, Calendar, DollarSign, Shield, Crown, MessageCircle, Settings, Trash2, Archive, Volume2, Bell } from 'lucide-react'
 import Image from 'next/image'
 
 interface Notification {

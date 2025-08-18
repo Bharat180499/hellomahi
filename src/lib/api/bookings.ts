@@ -1,27 +1,5 @@
 import { apiClient } from './client'
-import type {
-  Booking,
-  BookingRequest,
-  BookingResponse,
-  BookingUpdate,
-  BookingCancellation,
-  BookingStats,
-  EscortBookingStats,
-  AgencyBookingStats,
-  BookingFilter,
-  BookingSearch,
-  BookingSearchResult,
-  BookingNotification,
-  BookingReminder,
-  BookingDispute,
-  BookingVerification,
-  BookingService,
-  BookingLocation,
-  BookingAvailability,
-  BookingCalendar,
-  BookingTemplate,
-  BookingAnalytics
-} from '@/types/bookings'
+import type { Booking, BookingRequest, BookingResponse, BookingUpdate, BookingCancellation, BookingStats, EscortBookingStats, AgencyBookingStats, BookingSearch, BookingSearchResult, BookingNotification, BookingReminder, BookingDispute, BookingVerification, BookingService, BookingLocation, BookingAvailability, BookingCalendar, BookingTemplate, BookingAnalytics } from '@/types/bookings'
 
 // Booking Management
 export const bookings = {
